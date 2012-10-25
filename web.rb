@@ -15,5 +15,5 @@ get '/create' do
 end
 
 post '*' do
-  redirect to('/')
+  redirect to('/view')
 end
