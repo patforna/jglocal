@@ -6,8 +6,8 @@ get '/' do
   erb :index
 end
 
-get '/view' do
-  erb :view
+get '/project' do
+  erb :project
 end
 
 
