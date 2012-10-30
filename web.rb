@@ -16,7 +16,7 @@ get '/create' do
 end
 
 post '*' do
-  redirect to('/view')
+  redirect to('/project')
 end
 
 get '/sass' do
