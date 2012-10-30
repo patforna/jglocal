@@ -22,3 +22,6 @@ doc/
 
 # SASS artifacts
 .sass_cache
+
+# IntelliJ
+.idea
