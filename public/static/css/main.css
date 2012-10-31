@@ -9,14 +9,6 @@ body {
     color: #4d4940;
 }
 
-input[type="text"] {
-    background:  #fff;
-    opacity: 0.5;
-}
-
-textarea {
-    background:  #fff;
-}
 
 .project-pitch h1 {
     display: inline-block;
@@ -24,6 +16,24 @@ textarea {
     margin: 16px 0 22px 0;
 }
 
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 15px;
+        line-height: 1.0;
+    }
+
+    h2 {
+        font-size: 13px;
+        line-height: 1.0;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+
+}
 
 /*** major layout container divs ***/
 /*** region rows ***/
@@ -43,12 +53,16 @@ textarea {
     background:  #0f0;
     padding: 0 20px 15px 20px;
     background: url(../img/bg-transparent.png);
-    margin: 0 0 15px 0;
 }
 
 .creator-area {
     background: url(../img/bg-transparent.png);
-    padding:  0 20px;
+    padding:  0 20px 35px 20px;
+}
+
+.publish-area {
+    background: url(../img/bg-transparent.png);
+    padding:  0 20px 35px 20px;
 }
 
 .separator {
@@ -72,11 +86,40 @@ textarea {
 
 /*** module container divs ***/
 
+
+.social-area {
+    height: 90px;
+    margin-top: 10px;
+}
+
+.logo-area {
+    height: 100px;
+}
+
+.progress-area {
+    height: 60px;
+    margin-bottom: 22px;
+}
+
+.donate-area {
+    height: 40px;
+}
+
+.countdown-area {
+    height: 40px;
+}
+
+.reminder-area {
+    height: 40px;
+}
+
+.social-area, .progress-area, .countdown-area, .reminder-area {
+    border:  1px solid #f00;
+}
+
 .photo-frame {
     background: url(../img/hero-photo-frame-bg.png) no-repeat left top;
-/*    padding:  36px 27px 42px 34px; */
     padding:  38px 0 40px 30px;
-/*    text-align: center; */
 }
 
 .photo-frame img {
@@ -87,8 +130,6 @@ textarea {
 .map-frame {
     background: url(../img/map-frame-bg.png) no-repeat left top;
     padding:  38px 0 40px 25px;
-/*    padding:  38px 30px 40px 30px; */
-/*    text-align: center; */
 }
 
 .map-frame img {
@@ -101,6 +142,25 @@ textarea {
 }
 
 .donations-updates ul.history {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.donations-updates ul.history li {
+    border: 1px solid #0f0;
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.donation .amount {
+    float: right;
+}
+
+.donation .donation-text {
 
 }
 
@@ -114,6 +174,7 @@ textarea {
 
 .module {
     background:  #fff;
+    padding: 9px 7px 12px 12px;
 }
 
 .angular {
@@ -126,8 +187,118 @@ textarea {
 
 
 .have-your-say {
-
+    background:  #f1f1f1;
+    height: 85px;
+    border:  1px solid #f00;
 }
+
+
+
+/*** Create project page ***/
+
+.project-creation {
+    background: url(../img/bg-transparent.png);
+    padding: 0 20px;
+}
+
+.pitch-input {
+    margin:  15px 0 15px 0;
+}
+
+.project-pitch {
+    display: inline-block;
+    line-height: 1.4;
+    margin: 20px 0 0 0;
+    font-size:  36px;
+    font-weight: bold;
+    border: 1px solid #f00;
+    padding-bottom: 20px;
+}
+
+.project-pitch input {
+    margin: 0;
+    font-size: 36px;
+    padding: 0;
+    height: 42px;
+}
+
+.project-pitch input:focus {
+    background: transparent #f00 url(../img/input-corner-right.png) no-repeat right bottom;
+    border: none;
+    border-bottom: 1px solid #62625c;
+    border-radius: 0;
+    margin: 0;
+}
+
+input.target-amount {
+    width: 120px;
+}
+
+.pitchfor {
+    width: 460px;
+}
+
+.pitchbecause {
+    width: 460px;
+}
+
+.validation-summary-valid {
+    height: 0;
+}
+
+.text-error {
+    display: none;
+}
+
+.btn-submit-create {
+    margin:  20px 0 20px 0;
+}
+
+.input-outer {
+    display: inline-block;
+    overflow:  hidden;
+    background: url(../img/input-corner-left.png) no-repeat left bottom;
+}
+
+input[type="text"] {
+    background: none;
+    background: url(../img/input-corner-right.png) no-repeat right bottom;
+    border: none;
+    border-bottom: 1px solid #62625c;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+textarea {
+    background: none;
+    background: url(../img/input-corner-right.png) no-repeat right bottom;
+    border: none;
+    border-bottom:  1px solid #62625c;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+.project-details-area label {
+    font-weight: bold;
+    font-size: 21px;
+    margin:  0 0 0 5px;
+}
+
+.label-additional-info {
+    padding-left: 5px;
+}
+
+.project-details-area .input-outer {
+    margin-bottom: 35px;
+}
+
+.project-details-area input[type="text"] {
+    width: 460px;
+}
+
+
 
 
 /*** Form inputs ***/
@@ -139,24 +310,40 @@ textarea {
 /*** static graphic elements ***/
 
 .g-local-logo {
-    margin:  25px 18px 0 0;
+    margin:  12px 0 0 0;
     float: right;
 }
 
-.share-header {
-    float: left;
-    display: inline-block;
-}
-
-.facebook-share-large {
-    width: 100px;
-    height: 100px;
-    clear: left;
+.g-local-logo-mob {
+    width: 35px;
+    height: 45px;
+    margin: 10px 0 0 0;
     float: left;
 }
 
 .hero-project-photo img {
     margin-top: 20px;
+}
+
+
+/*** buttons and links ***/
+
+a.btn-donate {
+    text-decoration: none;
+}
+
+a.btn-donate:hover {
+    color: #fff;
+}
+
+.btn-donate {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    background: url(../img/btn-bg-donate.png) no-repeat left top;
+    padding: 10px 55px 26px 55px;
+    display: inline-block;
+    overflow: hidden;
 }
 
 
@@ -192,7 +379,6 @@ h1.project-title {
 
 /*** styles from current JG footer ***/
 footer .dynamic-footer {
-    border-top: 1px solid rgb(158, 148, 142);
     margin: 0px 20px !important;
     padding-top: 30px;
 }

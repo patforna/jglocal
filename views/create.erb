@@ -13,7 +13,7 @@
     <script src="static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="hidden-phone">
         <div class="container">
             <img src="static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
             <!-- login details -->
@@ -21,69 +21,124 @@
     </nav>
     <div class="container">
         <div class="page-content">
-            
+
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+            </ul></div>
+
+            <form method="POST">
+
+                <div class="row-fluid project-summary-area">
+                    <div class="span6 project-pitch">
+                        We're raising
+<!--                        &pound;<span class="input-outer"><input data-val="true" data-val-length="TBD: Enter the amount you want to raise" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50"  placeholder="Enter amount" class="target-amount" type="text" value="" /></span>
+                        for
+                        <span class="input-outer">
+                            <input data-val="true" data-val-length="TBD: Error Message for Pitch-For too long" data-val-length-max="50" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" name="PitchFor" class="pitchfor" placeholder="Enter your cause" type="text" value="" />
+                        </span>
+
+                        <span class="text-error">*</span>
+                        because
+                        <span class="input-outer"><input data-val="true" data-val-length="TBD: Error Message for Pitch-Because too long" data-val-length-max="50" data-val-required="TBD: Enter a reason" id="PitchBecause" maxlength="50" name="PitchBecause" class="pitchbecause" placeholder="Enter a reason" type="text" value="" /></span>
+-->
 
 
-<div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
+                        &pound;<span class="input-outer"><input data-val="true" data-val-length="TBD: Enter the amount you want to raise" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" class="target-amount" type="text" value="" /></span>
+                        for
+                        <span class="input-outer">
+                            <input data-val="true" data-val-length="TBD: Error Message for Pitch-For too long" data-val-length-max="50" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" name="PitchFor" class="pitchfor" type="text" value="" />
+                        </span>
 
-<form method="POST">
-    <div>
-        We're raising money for 
-        <input data-val="true" data-val-length="TBD: Error Message for Pitch-For too long" data-val-length-max="50" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" name="PitchFor" placeholder="Enter your cause" type="text" value="" />
-        <span class="text-error">*</span>
-        because 
-        <input data-val="true" data-val-length="TBD: Error Message for Pitch-Because too long" data-val-length-max="50" data-val-required="TBD: Enter a reason" id="PitchBecause" maxlength="50" name="PitchBecause" placeholder="Enter a reason" type="text" value="" />
-        <span class="text-error">*</span>
-    </div>
-    <div>
-        <label for="Creator">Creator</label>
-        <input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" placeholder="Enter your name" type="text" value="" />
-        <span class="text-error">*</span>
-    </div>
-    <div>
-        <label for="StoryProblem">What&#39;s the problem you&#39;re trying to address with this project?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryProblem" maxlength="280" name="StoryProblem" type="text" value="" />
-        <span class="text-error">*</span>
-        
-        <label for="StoryCare">Why do you care about this problem?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryCare" maxlength="280" name="StoryCare" type="text" value="" />
-        <span class="text-error">*</span>
-        
-        <label for="StoryBenefit">Who will benefit from this project?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryBenefit" maxlength="280" name="StoryBenefit" type="text" value="" />
-        <span class="text-error">*</span>
+                        <span class="text-error">*</span>
+                        because
+                        <span class="input-outer"><input data-val="true" data-val-length="TBD: Error Message for Pitch-Because too long" data-val-length-max="50" data-val-required="TBD: Enter a reason" id="PitchBecause" maxlength="50" name="PitchBecause" class="pitchbecause" type="text" value="" /></span>
 
-        <label for="StoryMoney">How will the money be spent? Provide a break-down of your target.?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryMoney" maxlength="280" name="StoryMoney" type="text" value="" />
-        <span class="text-error">*</span>
+                        <span class="text-error">*</span>
+                    </div>
+                    <div class="span6">
+                        <h2>Describe your project</h2>
+                        <p>
+                            Give your audience an overview about your project, so that they know at a glance why it's important that they donate.<br />
+                            How much money do you need? (Maximum &pound;1000)<br />
+                            Who will benefit from the project?<br />
+                            Why do you want to do the project?
+                        </p>
+                    </div>
+                </div>
 
-        <label for="StoryDeadline">When will your supporters be able to see the difference?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryDeadline" maxlength="280" name="StoryDeadline" type="text" value="" />
-        <span class="text-error">*</span>
 
-        <label for="StoryAnythingElse">Anything else?</label>
-        <input data-val="true" data-val-length="TBD" data-val-length-max="280" id="StoryAnythingElse" maxlength="280" name="StoryAnythingElse" type="text" value="" />
-    </div>
-    <div>
-        <label for="Location">Project Location</label>
-        <input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Location too long" data-val-length-max="100" data-val-required="TBD: Enter your location" id="Location" maxlength="100" name="Location" placeholder="Enter the project location" type="text" value="" />
-        <span class="text-error">*</span>
-    </div>
-    <div>
-        <label for="PageShortName">Page Short Name</label>
-        <input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" placeholder="Enter the page short name" type="text" value="" />
-        <span class="text-error">*</span>
-    </div>
-    <input type="submit" />
-</form>
+                <div class="row-fluid separator">
+                    <div class="separator-end left"></div>
+                    <div class="separator-end right"></div>
+                </div>
+
+
+                <div class="row-fluid hero-image-area">
+                    <div class="span6">
+                    </div>
+                    <div class="span6">
+                    </div>
+                </div>
+                <div class="row-fluid project-details-area">
+                    <div class="span6">
+                        <label for="Creator">Creator</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" class="span12" placeholder="Enter your name" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="Location">Project Location</label>
+                        <div class="input-outer"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Location too long" data-val-length-max="100" data-val-required="TBD: Enter your location" id="Location" maxlength="100" name="Location" class="span12" placeholder="Enter the project location" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="PageShortName">Page Short Name</label>
+                        <div class="input-outer"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" class="span12" placeholder="Enter the page short name" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+                    </div>
+                    <div class="span6">
+                        <label for="StoryProblem">What&#39;s the problem you&#39;re trying to solve?</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryProblem" maxlength="280" name="StoryProblem" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="StoryCare">Why do you care about this problem?</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryCare" maxlength="280" name="StoryCare" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="StoryBenefit">Who will benefit from this project?</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryBenefit" maxlength="280" name="StoryBenefit" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="StoryMoney">How will the money be spent?</label>
+                        <span class="label-additional-info">Provide a break-down of your target.</span>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryMoney" maxlength="280" name="StoryMoney" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="StoryDeadline">When will you finish the project?</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryDeadline" maxlength="280" name="StoryDeadline" type="text" value="" /></div>
+                        <span class="text-error">*</span>
+
+                        <label for="StoryAnythingElse">Anything else?</label>
+                        <div class="input-outer"><input data-val="true" data-val-length="TBD" data-val-length-max="280" id="StoryAnythingElse" maxlength="280" name="StoryAnythingElse"  type="text" value="" /></div>
+                    </div>
+                </div>
+
+
+                <div class="row-fluid publish-area">
+                    <div class="span6">
+                    </div>
+                    <div class="span6">
+                        <input type="submit" class="btn-submit-create"/>
+                    </div>
+                </div>
+
+            </form>
+
+
+
 
 
             <!-- Start JustGiving footer -->
             <footer>
                 <div class="dynamic-footer">
                     <a class="footer-logo" href="//justgiving.com">
-                        <img alt="JustGiving.com" src="/jg-refresh/content/images/logos/logo-justgiving-small.png" height="17" width="90"></a>
+                        <img alt="JustGiving.com" src="static/img/logo-justgiving-small.png" height="17" width="90"></a>
                     <div class="footer-list-wrapper">
                         <ul>
                             <li>
