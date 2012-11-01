@@ -243,9 +243,10 @@ input.target-amount {
 }
 
 .field-validation-error {
+    font-size: 14px;
     color: red;
-    margin: 0 0 0 5px;
     display: block;
+    font-weight: normal;
 }
 
 .btn-submit-create {
