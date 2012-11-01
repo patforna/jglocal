@@ -242,12 +242,10 @@ input.target-amount {
     width: 460px;
 }
 
-.validation-summary-valid {
-    height: 0;
-}
-
-.text-error {
-    display: none;
+.field-validation-error {
+    color: red;
+    margin: 0 0 0 5px;
+    display: block;
 }
 
 .btn-submit-create {
