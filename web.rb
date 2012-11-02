@@ -15,6 +15,10 @@ get '/create' do
   erb :create
 end
 
+get '/test' do
+  erb :test, {:layout => false}
+end
+
 post '*' do
   redirect to('/project')
 end
