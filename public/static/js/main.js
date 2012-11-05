@@ -24,7 +24,7 @@
 				});
 				new google.maps.Marker({ map: map, position: location });
 			} else {
-				console.log("Geocode was not successful for the following reason: " + status);
+				$('#map-canvas').empty().append('<img src="../static/img/map-placeholder.jpg"/>');
 			}
 		});
 	}
