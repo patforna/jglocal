@@ -16,6 +16,11 @@ body {
     margin: 16px 0 22px 0;
 }
 
+h2 {
+    font-size: 24px;
+    line-height: 1.0;
+}
+
 
 @media (max-width: 480px) {
     h1 {
@@ -62,7 +67,8 @@ body {
 
 .publish-area {
     background: url(../img/bg-transparent.png);
-    padding:  0 20px 35px 20px;
+    padding:  30px 20px 35px 20px;
+
 }
 
 .separator {
@@ -165,8 +171,28 @@ body {
 }
 
 .project-story {
-
+    margin-top: 15px;
 }
+
+.project-story h2 {
+    font-size: 24px;
+    line-height: 1.0;
+    padding:  0 0 5px 0;
+    margin: 0;
+}
+
+.project-story p {
+    font-size: 12px;
+    line-height: 1.3;
+    padding: 0 0 13px 0;
+    margin: 0;
+}
+
+.project-story a {
+    color: #4d4940;
+    text-decoration: underline;
+}
+
 
 .about-me {
     color: #5ca2d3;
@@ -230,8 +256,53 @@ body {
     margin: 0;
 }
 
+.project-pitch-description-outer {
+    background: url(../img/project-pitch-description-bg.png) no-repeat left center;
+    margin:  35px 0 33px 0;
+}
+
+.project-pitch-description {
+    background: #65625c;
+    color: #fff;
+    margin:  0 0 0 8px;
+    padding:  15px 10px 20px 18px;
+    border-bottom: 2px solid #5a9ece;
+    border-right: 2px solid #5a9ece;
+}
+
+.project-pitch-description h3 {
+    margin: 0;
+    padding: 0 0 5px 0;
+/*    background: #f00; */
+    font-size: 21px;
+    line-height: 1.0;
+}
+
+.project-pitch-description p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.project-pitch-description ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+
+.project-pitch-description li {
+    font-size: 18px;
+/*    border:  1px solid #0f0; */
+    padding:  0 0 8px 0;
+/*    line-height: 1.0;*/
+}
+
 input.target-amount {
     width: 120px;
+    padding: 0 0 0 5px;
+}
+
+.target-amount-outer {
+    margin-left: 10px;
 }
 
 .pitchfor {
@@ -242,6 +313,65 @@ input.target-amount {
     width: 460px;
 }
 
+.map-frame-create {
+    background: url(../img/map-frame-bg.png) no-repeat left top;
+    padding:  38px 0 40px 25px;
+}
+
+.photo-frame-create {
+    background: url(../img/map-frame-bg.png) no-repeat left top;
+    padding:  38px 0 40px 25px;
+}
+
+.photo-frame-create-inner {
+    background:  #a59c94;
+    width: 430px;
+    height: 255px;
+}
+
+
+.map-frame-create-inner {
+    background: url(../img/map-large.jpg) no-repeat left top;
+    width: 430px;
+    height: 255px;
+}
+
+.photo-upload {
+    background: none;
+    background: url(../img/plus-icon.png) no-repeat 0 4px;
+    margin:  3px 0 0 11px;
+/*    padding:  3px 16px 5px 26px; */
+    padding:  0px 16px 5px 15px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.photo-upload-outer {
+    background: url(../img/btn-bg-upload.png) no-repeat left top;
+    margin: 110px 0 0 150px;
+    display: inline-block;
+    overflow:  hidden;
+}
+
+input.location-input[type="text"] {
+/*    padding:  13px 20px 35px 52px; */
+    background: none;
+    background: url(../img/location-input-bg.png) no-repeat top left!important;
+    padding: 6px 0 7px 10px!important;
+    margin: 114px 0 0 111px!important;
+    color: #d7348d;
+    border: none;
+    border-bottom: none!important;
+    font-size: 12px;
+}
+
+.contact-details-module {
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
 .field-validation-error {
     font-size: 14px;
     color: red;
@@ -249,22 +379,29 @@ input.target-amount {
     font-weight: normal;
 }
 
-.btn-submit-create {
-    margin:  20px 0 20px 0;
+.btn-publish {
+    padding: 18px 35px 23px 28px;
+    border:  none;
+    background: url(../img/btn-bg-publish.png) no-repeat left top;
+    font-size: 24px;
+    color: #fff;
+    float: right;
 }
 
 .input-outer {
-    display: inline-block;
-    overflow:  hidden;
-    background: url(../img/input-corner-left.png) no-repeat left bottom;
+/*    display: inline-block;
+    overflow:  hidden;*/
+/*    background: url(../img/input-corner-left.png) no-repeat left bottom; */
 }
 
 input[type="text"] {
     background: none;
-    background: url(../img/input-corner-right.png) no-repeat right bottom;
+/*    background: url(../img/input-corner-right.png) no-repeat right bottom; */
     border: none;
-    border-bottom: 1px solid #62625c;
+/*    border-bottom: 1px solid #62625c; */
+    border-bottom: 1px solid #b5aca5;
     border-radius: 0;
+    padding:  3px 0 5px 0;
     margin: 0;
     box-shadow: none;
 }
@@ -282,11 +419,11 @@ textarea {
 .project-details-area label {
     font-weight: bold;
     font-size: 21px;
-    margin:  0 0 0 5px;
+    margin:  0;
 }
 
 .label-additional-info {
-    padding-left: 5px;
+/*    padding-left: 5px; */
 }
 
 .project-details-area .input-outer {
@@ -294,7 +431,7 @@ textarea {
 }
 
 .project-details-area input[type="text"] {
-    width: 460px;
+/*    width: 460px; */
 }
 
 
