@@ -92,10 +92,34 @@ h2 {
 
 /*** module container divs ***/
 
+.project-owner-area {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.project-owner-area img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.project-owner-area  p {
+    font-size: 12px;
+    line-height: 1.0;
+    margin: 11px 0 0 0;
+    padding: 0;
+}
+
+.project-owner-area .creator-name {
+    padding: 0;
+    line-height: 1.0;
+}
 
 .social-area {
-    height: 90px;
-    margin-top: 10px;
+    height: 25px;
+    margin: 0 0 15px 0;
 }
 
 .logo-area {
@@ -206,7 +230,7 @@ h2 {
 
 .donation-text {
 /*    width: 65%; */
-    width: 75%;
+    width: 80%;
     float: left;
     font-size: 14px;
     line-height: 1.2;
@@ -228,7 +252,7 @@ h2 {
 
 .donation-text p {
     margin: 0 0 2px 0;
-    padding: 15px 15px 0 15px;
+    padding: 15px 10px 0 15px;
 }
 
 .donation-amount {
@@ -241,9 +265,13 @@ h2 {
     padding: 15px 0 0 0;
 }
 
-.donor-name {
+.donor-name, .creator-name {
     font-size: 12px;
-    padding:  0 0 15px 15px;
+    padding:  0 5px 15px 15px;
+}
+
+.project-summary-area .creator-name {
+    font-weight: bold;
 }
 
 .donation-date {
@@ -277,23 +305,43 @@ h2 {
 }
 
 
-.about-me {
+.about-me-module {
     color: #5ca2d3;
+    padding: 9px 7px 12px 12px;
+    display: inline-block;
+    overflow: hidden;
+    background:  #fff;
+}
+
+.about-me-module h3 {
+    font-size: 14px;
+    line-height: 1.0;
+    font-weight: bold;
+    padding:  0;
+    margin: 0 0 5px 0;
+}
+
+.about-me-module img {
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding:  0 5px 0 15px;
+}
+
+.about-me-module p {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.about-me-module p.static-text {
+    color: #d7348d;
+    margin:  4px 0 5px 0;
 }
 
 .module {
     background:  #fff;
     padding: 9px 7px 12px 12px;
 }
-
-.angular {
-
-}
-
-.blue {
-    color: #5ca2d3;
-}
-
 
 .have-your-say {
     background:  #f1f1f1;
@@ -314,7 +362,7 @@ h2 {
     margin:  15px 0 15px 0;
 }
 
-.project-pitch {
+.project-pitch h1 {
     display: inline-block;
     line-height: 1.4;
     margin: 20px 0 0 0;
@@ -563,8 +611,29 @@ a.btn-donate:hover {
     padding: 10px 55px 26px 55px;
     display: inline-block;
     overflow: hidden;
+    text-decoration: none;
 }
 
+.btn-donate:hover {
+    color: #fff;
+}
+
+.btn-contact {
+    font-size: 12px;
+    color: #fff;
+    background: url(../img/btn-bg-contact.png) no-repeat left top;
+    padding: 4px 26px 4px 27px;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    float: right;
+    margin:  15px 5px 0 0;
+}
+
+.btn-contact:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
 /*** General useful styles ***/
 
