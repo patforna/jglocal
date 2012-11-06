@@ -4,7 +4,7 @@
 <form method="POST">
 
     <div class="row-fluid project-summary-area">
-        <div class="span6 project-pitch">
+        <div class="span6 project-pitch-input">
             We're raising
             &pound;<span class="input-outer target-amount-outer"><input data-val="true" data-val-length="TBD: Enter the amount you want to raise" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" class="target-amount" type="text" value="" /></span>
             for
@@ -142,10 +142,13 @@
 
 
     <div class="row-fluid publish-area">
+        <div class="span6"></div>
         <div class="span6">
-        </div>
-        <div class="span6">
-            <input type="submit" class="btn-publish" value="Publish your project" />
+            <div class="tandc">
+                <input type="checkbox" name="agreetandc" class="checkbox-tandc" />
+                <label for="agreetandc">I promise to do good with the money I raise</label>
+            </div>
+            <div class="publish"><input type="submit" class="btn-publish" value="Publish your project" /></div>
         </div>
     </div>
 

@@ -9,8 +9,7 @@ body {
     color: #4d4940;
 }
 
-
-.project-pitch h1 {
+h1.project-title {
     display: inline-block;
     line-height: 1.175;
     margin: 16px 0 22px 0;
@@ -20,7 +19,6 @@ h2 {
     font-size: 24px;
     line-height: 1.0;
 }
-
 
 @media (max-width: 480px) {
     h1 {
@@ -68,7 +66,6 @@ h2 {
 .publish-area {
     background: url(../img/bg-transparent.png);
     padding:  30px 20px 35px 20px;
-
 }
 
 .separator {
@@ -167,10 +164,6 @@ h2 {
     height: 255px;
 }
 
-.donations-updates {
-
-}
-
 .donations-updates ul.history {
     list-style-type: none;
     margin: 0;
@@ -179,7 +172,6 @@ h2 {
 }
 
 .donations-updates ul.history li {
-/*    padding: 15px; */
     background: #fff;
     margin-bottom: 10px;
     display: inline-block;
@@ -237,7 +229,6 @@ h2 {
     margin: 0;
     padding: 0 0 3px 0;
 }
-
 
 .creator-comment .donation-text {
     width: 100%
@@ -304,7 +295,6 @@ h2 {
     text-decoration: underline;
 }
 
-
 .about-me-module {
     color: #5ca2d3;
     padding: 9px 7px 12px 12px;
@@ -362,24 +352,22 @@ h2 {
     margin:  15px 0 15px 0;
 }
 
-.project-pitch h1 {
+.project-pitch-input {
     display: inline-block;
-    line-height: 1.4;
-    margin: 20px 0 0 0;
-    font-size:  36px;
+    line-height: 1.175;
+    margin: 16px 0 22px 0;
+    font-size: 32px;
     font-weight: bold;
-/*    border: 1px solid #f00;*/
-    padding-bottom: 20px;
 }
 
-.project-pitch input {
+.project-pitch-input input {
     margin: 0;
     font-size: 36px;
     padding: 0;
     height: 42px;
 }
 
-.project-pitch input:focus {
+.project-pitch-input input:focus {
     background: transparent #f00 url(../img/input-corner-right.png) no-repeat right bottom;
     border: none;
     border-bottom: 1px solid #62625c;
@@ -503,12 +491,38 @@ input.location-input[type="text"] {
     margin-bottom: 35px;
 }
 
+.tandc {
+    width: 45%;
+    float: left;
+    margin: 15px 0 0 0;
+}
+
+.tandc label {
+    color: #d8348d;
+    font-size: 12px;
+    line-height: 1.2;
+    clear: none;
+    display: inline;
+}
+
+.checkbox-tandc {
+    -moz-box-shadow:    3px 3px 0 0 #d8348d;
+    -webkit-box-shadow: 3px 3px 0 0 #d8348d;
+    box-shadow:         3px 3px 0 0 #d8348d;
+}
+
+.publish {
+    width: 55%;
+    float: left;
+}
+
 .field-validation-error {
     font-size: 14px;
     color: red;
     display: block;
     font-weight: normal;
 }
+
 
 .btn-publish {
     padding: 18px 35px 23px 28px;
@@ -545,7 +559,6 @@ textarea {
     border-radius: 0;
     box-shadow: none;
 }
-
 
 .project-details-area label {
     font-weight: bold;
