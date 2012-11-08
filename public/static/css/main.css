@@ -31,11 +31,9 @@ h2 {
 .hero-image-area {
     padding: 0 20px 15px 20px;
     background: url(../img/bg-transparent.png);
-    margin: 0;
 }
 
 .project-details-area {
-    background:  #0f0;
     padding: 0 20px 15px 20px;
     background: url(../img/bg-transparent.png);
     margin:  0;
@@ -48,7 +46,9 @@ h2 {
 
 .publish-area {
     background: url(../img/bg-transparent.png);
-    padding:  30px 20px 35px 20px;
+/*    padding:  30px 20px 35px 20px; */
+    padding:  30px 0 35px 0;
+    margin:  0 20px;
 }
 
 .separator {
@@ -135,7 +135,6 @@ h2 {
 
 .photo-frame {
     background: url(../img/map-frame-bg.png) no-repeat left top;
-/*    padding:  38px 0 40px 30px; */
     padding:  38px 0 40px 25px;
 }
 
@@ -203,20 +202,18 @@ h2 {
     box-shadow:         3px 3px 0 0 #65625d;
 }
 
-.donation .amount {
-    float: right;
-}
-
-/*
-.donation-image {
-    width: 20%;
+.donation-image{
+    width: 70px;
     float: left;
 }
-*/
+
+.donation-image img {
+    padding: 15px 0 0 15px;
+}
 
 .donation-text {
-/*    width: 65%; */
-    width: 80%;
+    width: 65%;
+ /*   width: 80%; */
     float: left;
     font-size: 14px;
     line-height: 1.2;
@@ -225,7 +222,7 @@ h2 {
 }
 
 .creator-comment .donation-text {
-    width: 100%
+    width: 80%
 }
 
 .creator-comment {
@@ -235,15 +232,23 @@ h2 {
     box-shadow:         3px 3px 0 0 #c20f15;
 }
 
+.creator-comment .donation-image {
+    float: right;
+}
+
+.creator-comment .donation-image img {
+    padding: 15px 15px 15px 0;
+}
+
 .donation-text p {
     margin: 0 0 2px 0;
     padding: 15px 10px 0 15px;
 }
 
 .donation-amount {
-/*    width: 15%; */
-    width: 20%;
-    float: right;
+    width: 15%;
+/*    width: 20%; */
+    float: left;
     font-size: 14px;
     line-height: 1.2;
     font-weight: bold;
@@ -330,7 +335,7 @@ h2 {
 .have-your-say {
     background:  #f1f1f1;
     height: 85px;
-    border:  1px solid #f00;
+    visibility: hidden;
 }
 
 
@@ -721,7 +726,7 @@ footer ul {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 1.0;
     }
 
