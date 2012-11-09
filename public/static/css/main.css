@@ -386,7 +386,6 @@ h2 {
 .project-pitch-description h3 {
     margin: 0;
     padding: 0 0 5px 0;
-/*    background: #f00; */
     font-size: 21px;
     line-height: 1.0;
 }
@@ -404,9 +403,7 @@ h2 {
 
 .project-pitch-description li {
     font-size: 18px;
-/*    border:  1px solid #0f0; */
     padding:  0 0 8px 0;
-/*    line-height: 1.0;*/
 }
 
 input.target-amount {
@@ -453,7 +450,6 @@ input.target-amount {
     background: none;
     background: url(../img/plus-icon.png) no-repeat 0 4px;
     margin:  3px 0 0 11px;
-/*    padding:  3px 16px 5px 26px; */
     padding:  0px 16px 5px 15px;
     border: none;
     font-size: 12px;
@@ -468,7 +464,6 @@ input.target-amount {
 }
 
 input.location-input[type="text"] {
-/*    padding:  13px 20px 35px 52px; */
     background: none;
     background: url(../img/location-input-bg.png) no-repeat top left!important;
     padding: 6px 0 7px 10px!important;
@@ -528,16 +523,11 @@ input.location-input[type="text"] {
 }
 
 .input-outer {
-/*    display: inline-block;
-    overflow:  hidden;*/
-/*    background: url(../img/input-corner-left.png) no-repeat left bottom; */
 }
 
 input[type="text"] {
     background: none;
-/*    background: url(../img/input-corner-right.png) no-repeat right bottom; */
     border: none;
-/*    border-bottom: 1px solid #62625c; */
     border-bottom: 1px solid #b5aca5;
     border-radius: 0;
     padding:  3px 0 5px 0;
@@ -666,11 +656,6 @@ nav {
     margin-bottom: 30px;
 }
 
-/*
-h1.project-title {
-    margin: 33px 0 11px 0;
-}
-*/
 
 /*** styles from current JG footer ***/
 footer .dynamic-footer {
@@ -713,8 +698,6 @@ footer ul {
 
 
 
-
-
 /*** media queries ***/
 /* break point 480px matches bootstrap */
 
@@ -736,6 +719,12 @@ footer ul {
     }
 
     .project-details-area label {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .project-story h2 {
         font-weight: bold;
         font-size: 18px;
         margin: 0;
@@ -771,7 +760,63 @@ footer ul {
         display: none;
     }
 
+/* start section for donation history area */
 
+
+
+    .donation-image{
+        width: 60px;
+        float: left;
+    }
+
+    .donation-image img {
+        padding: 10px 0 0 10px;
+    }
+
+    .donation-text {
+        width: 155px;
+        float: left;
+        font-size: 14px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0 0 3px 0;
+    }
+
+    .donation-text p {
+        margin: 0 0 2px 0;
+        padding: 15px 5px 0 10px;
+    }
+
+    .donation-amount {
+        width: 40px;
+        float: left;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: bold;
+        padding: 15px 15px 0 0;
+        text-align: right;
+    }
+
+    .donor-name, .creator-name {
+        font-size: 12px;
+        padding:  0 5px 15px 10px;
+    }
+
+    .project-summary-area .creator-name {
+        font-weight: bold;
+    }
+
+    .donation-date {
+        font-size: 12px;
+        font-weight: bold;
+        display: inline-block;
+        padding:  0 0 15px 0;
+    }
+
+/* end section for donation history area */
 
 }
 
+@media (max-width: 320px) {
+
+}
