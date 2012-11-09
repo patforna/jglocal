@@ -12,6 +12,7 @@
 	// --- project (view) page ---
 	if (!onProjectCreationPage()) {
 
+        // Google Maps
 		new google.maps.Geocoder().geocode({'address': $('#location').text()}, function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
 				var location = results[0].geometry.location;
@@ -27,6 +28,15 @@
 				$('#map-canvas').empty().append('<img src="../static/img/map-placeholder.jpg"/>');
 			}
 		});
+		
+		// Facebook
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 	}
 
 });
