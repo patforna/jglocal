@@ -488,10 +488,6 @@ input.location-input[type="text"] {
 }
 
 .tandc label {
-/*
-    clear: none;
-    display: inline;
-    margin:  5px; */
     color: #fff;
     font-size: 14px;
     font-weight: bold;
