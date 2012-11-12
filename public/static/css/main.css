@@ -519,11 +519,11 @@ input.location-input[type="text"] {
     float: right;
 }
 
-.btn-publish .disabled {
+.btn-publish.disabled {
     background: url(../img/btn-bg-publish-disabled.png) no-repeat left top;
 }
 
-.btn-publish .enabled{
+.btn-publish.enabled{
     background: url(../img/btn-bg-publish-enabled.png) no-repeat left top;
 }
 
