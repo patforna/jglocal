@@ -526,6 +526,7 @@ input.location-input[type="text"] {
 
 .btn-publish.enabled{
     background: url(../img/btn-bg-publish-enabled.png) no-repeat left top;
+    cursor: pointer;
 }
 
 .input-outer {
