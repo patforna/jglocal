@@ -31,6 +31,7 @@ h2 {
 .hero-image-area {
     padding: 0 20px 15px 20px;
     background: url(../img/bg-transparent.png);
+    margin: 0;
 }
 
 .project-details-area {
@@ -96,8 +97,18 @@ h2 {
 
 .social-area {
     height: 25px;
-    margin: 0 0 15px 0;
-    visibility: hidden;
+    margin: 0;
+}
+
+.social-area ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.social-area ul li {
+    float: left;
+    display: inline-block;
+    padding-right: 10px;
 }
 
 .logo-area {
@@ -105,13 +116,27 @@ h2 {
 }
 
 .progress-area {
-    height: 60px;
+/*    height: 60px; */
     margin-bottom: 22px;
     visibility: hidden;
+    width: 200px;
+    float: left;
 }
 
 .donate-area {
-    height: 40px;
+/*    height: 40px; */
+    width: 200px;
+    float: left;
+    border:  1px solid #f00;
+    margin:  30px 0 0 0;
+}
+
+.target-numbers-area {
+    border:  1px solid #f00;
+    display: inline-block;
+    overflow: hidden;
+    clear: left;
+    float: left;
 }
 
 .countdown-area {
@@ -124,18 +149,28 @@ h2 {
     visibility: hidden;
 }
 
-.social-area, .progress-area, .countdown-area, .reminder-area {
+.progress-area, .countdown-area, .reminder-area {
     border:  1px solid #f00;
 }
 
+.photo-container {
+  display: table;
+}
 .photo-frame {
     background: url(../img/map-frame-bg.png) no-repeat left top;
     padding:  38px 0 40px 25px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.photo-frame-inner {
+  width: 430px;
+  height: 255px;
 }
 
 .photo-frame img {
-    width: 430px;
-    height: 255px;
+  display: block;
+  margin: 0 auto;
 }
 
 .map-frame {
@@ -266,6 +301,18 @@ h2 {
     padding:  0 0 15px 0;
 }
 
+.progress-area {
+    font-size: 200px;
+}
+
+.total-raised {
+    color: #a9c100;
+}
+
+.total-background {
+    color: #929459;
+}
+
 .project-story {
     margin-top: 15px;
 }
@@ -360,7 +407,7 @@ h2 {
 }
 
 .project-pitch-input input:focus {
-    background: transparent #f00 url(../img/input-corner-right.png) no-repeat right bottom;
+    background: transparent  url(../img/input-corner-right.png) no-repeat right bottom;
     border: none;
     border-bottom: 1px solid #62625c;
     border-radius: 0;
@@ -445,20 +492,39 @@ input.target-amount {
 }
 
 .photo-upload {
-    background: none;
     background: url(../img/plus-icon.png) no-repeat 0 4px;
     margin:  3px 0 0 11px;
     padding:  0px 16px 5px 15px;
     border: none;
     font-size: 12px;
     color: #fff;
+  position: relative;
+  width: 109px;
 }
 
 .photo-upload-outer {
-    background: url(../img/btn-bg-upload.png) no-repeat left top;
-    margin: 110px 0 0 150px;
-    display: inline-block;
-    overflow:  hidden;
+  margin: 0 auto;
+  width: 430px;
+  height: 255px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.photo-upload-outer img {
+  vertical-align: middle;
+  display: table-cell;
+  margin: 0 auto;
+}
+
+.photo-upload-container {
+  background: url(../img/btn-bg-upload.png) no-repeat center;
+  float: left;
+}
+
+.swfupload {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
 }
 
 input.location-input[type="text"] {
