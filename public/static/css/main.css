@@ -521,6 +521,7 @@ input.location-input[type="text"] {
 
 .btn-publish.disabled {
     background: url(../img/btn-bg-publish-disabled.png) no-repeat left top;
+    cursor: auto;
 }
 
 .btn-publish.enabled{
