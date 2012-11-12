@@ -44,11 +44,16 @@
             <div class="span6">
                 <div class="photo-frame-create">
                     <div class="photo-frame-create-inner">
+<!--@*                        <img src="#" style="display: none; margin-left: auto; margin-right: auto" />*@ -->
                         <div class="photo-upload-outer">
-                            <input type="submit" class="photo-upload" value="Upload a photo" />
+                            <img src="@Url.Content("~/static/img/ajax-loader-24x24.gif")" style="display: none"/>
+<!--                            @Html.HiddenFor(m => m.ImageUrl) -->
                         </div>
                     </div>
-
+                </div>
+                <div class="span3 photo-upload-container">
+                    <input type="file" id="projectImage" name="fileData"/>
+                    <button class="photo-upload ">Upload photo</button>
                 </div>
             </div>
             <div class="span6">
@@ -65,7 +70,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="row-fluid separator">
         <div class="separator-end left"></div>
