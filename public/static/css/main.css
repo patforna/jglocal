@@ -514,10 +514,17 @@ input.location-input[type="text"] {
 .btn-publish {
     padding: 18px 35px 23px 28px;
     border:  none;
-    background: url(../img/btn-bg-publish.png) no-repeat left top;
     font-size: 24px;
     color: #fff;
     float: right;
+}
+
+.btn-publish .disabled {
+    background: url(../img/btn-bg-publish-disabled.png) no-repeat left top;
+}
+
+.btn-publish .enabled{
+    background: url(../img/btn-bg-publish-enabled.png) no-repeat left top;
 }
 
 .input-outer {
