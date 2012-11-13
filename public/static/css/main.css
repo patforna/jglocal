@@ -116,19 +116,14 @@ h2 {
 }
 
 .progress-area {
-/*    height: 60px; */
-    margin-bottom: 22px;
-    visibility: hidden;
-    width: 200px;
+    margin: 0 5px 0 0;
     float: left;
 }
 
-.donate-area {
-/*    height: 40px; */
+.donate-area { s
     width: 200px;
     float: left;
-    border:  1px solid #f00;
-    margin:  30px 0 0 0;
+    margin:  54px 0 0 0;
 }
 
 .target-numbers-area {
@@ -149,7 +144,7 @@ h2 {
     visibility: hidden;
 }
 
-.progress-area, .countdown-area, .reminder-area {
+.countdown-area, .reminder-area {
     border:  1px solid #f00;
 }
 
@@ -301,8 +296,10 @@ h2 {
     padding:  0 0 15px 0;
 }
 
-.progress-area {
-    font-size: 200px;
+#pie-container {
+    font-size: 206px;
+    line-height: 0.5;
+    position: relative;
 }
 
 .total-raised {
@@ -311,6 +308,74 @@ h2 {
 
 .total-background {
     color: #929459;
+}
+
+.pie-centre {
+    color: #dcddc4;
+}
+
+.days-left {
+    color: #128d38;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    left: 50px;
+    top: 52px;
+    width: 70px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+}
+
+.days-left-number {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.amounts-area {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.amount-raised {
+    width: 85px;
+    float: left;
+    padding:  0;
+    margin:  0;
+}
+
+.target-amount {
+    border-left: 1px solid #888080;
+    width: 87px;
+    float: left;
+    padding:  0 0 0 7px;
+}
+
+.amounts-label {
+    font-size: 11px;
+    color: #888080;
+    line-height: 1.0;
+    padding: 0;
+    margin:  0;
+}
+
+.amounts-value {
+    font-size: 32px;
+    line-height: 1.0;
+    font-weight: bold;
+    padding:  0;
+    margin:  0;
+}
+
+.amount-raised .amounts-value {
+    color: #a9c100;
+}
+
+.target-amount .amounts-value {
+    color: #d7348d;
 }
 
 .project-story {
@@ -483,7 +548,6 @@ input.target-amount {
     width: 430px;
     height: 255px;
 }
-
 
 .map-frame-create-inner {
     background: url(../img/map-large.jpg) no-repeat left top;
@@ -848,7 +912,7 @@ footer ul {
         margin: 0 0 2px 6px;
     }
 
-    .social-area, .progress-area, .countdown-area, .reminder-area {
+    .social-area, .countdown-area, .reminder-area {
         display: none;
     }
 
