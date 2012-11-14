@@ -272,11 +272,14 @@ h3 {
     width: 95%;
 }
 
+.post-update h2 {
+    margin:  10px 0 6px 0;
+}
+
 .post-update h3 {
     display: inline-block;
     float: left;
-    clear: none;
-    border: 1px solid #f00;
+    margin:  5px 0 10px 0;
 }
 
 .update-submit {
