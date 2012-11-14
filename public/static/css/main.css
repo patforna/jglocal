@@ -126,10 +126,23 @@ h3 {
     float: left;
 }
 
-.donate-area { s
+.donate-area {
     width: 200px;
     float: left;
     margin:  54px 0 0 0;
+}
+
+.remind-link {
+    color: #888080;
+    font-size: 11px;
+    line-height: 1.0;
+    background: url(../img/remind-link-bg.png) no-repeat right;
+    padding: 0 24px 0 0;
+    margin: 0 0 0 10px;
+}
+
+.remind-link:hover {
+    text-decoration: none;
 }
 
 .update-area {
@@ -137,7 +150,7 @@ h3 {
 }
 
 .target-numbers-area {
-    border:  1px solid #f00;
+    border: 1px solid #f00;
     display: inline-block;
     overflow: hidden;
     clear: left;
@@ -155,7 +168,7 @@ h3 {
 }
 
 .countdown-area, .reminder-area {
-    border:  1px solid #f00;
+    border: 1px solid #f00;
 }
 
 .photo-container {
@@ -163,7 +176,7 @@ h3 {
 }
 .photo-frame {
     background: url(../img/map-frame-bg.png) no-repeat left top;
-    padding:  38px 0 40px 25px;
+    padding: 38px 0 40px 25px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -207,7 +220,8 @@ h3 {
 
 .update-input-skew {
     padding: 0;
-    width: 90%;
+    width: 100%;
+    outline: none;
 }
 
 .update-submit-container {
@@ -241,11 +255,21 @@ h3 {
     -moz-transform: skew(5deg,0.5deg); /* Firefox */
 }
 
+.matrix-bg {
+    background: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 200px;
+    height: 160px;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
 .skew-content {
     position: absolute;
     left: 15px;
     top: 15px;
-    width: 80%;
+    width: 95%;
 }
 
 .update-submit {
@@ -778,6 +802,7 @@ textarea {
     border-bottom:  1px solid #62625c;
     border-radius: 0;
     box-shadow: none;
+    outline: none;
 }
 
 .project-details-area label {
@@ -841,7 +866,7 @@ a.btn-donate:hover {
     font-weight: bold;
     color: #fff;
     background: url(../img/btn-bg-donate.png) no-repeat left top;
-    padding: 10px 55px 26px 55px;
+    padding: 10px 55px 15px 55px;
     display: inline-block;
     overflow: hidden;
     text-decoration: none;
