@@ -464,7 +464,6 @@ h3 {
 .target-amount {
     border-left: 1px solid #888080;
     width: 87px;
-    float: left;
     padding:  0 0 0 7px;
 }
 
@@ -583,14 +582,6 @@ h3 {
     font-size: 36px;
     padding: 0;
     height: 42px;
-}
-
-.project-pitch-input input:focus {
-    background: transparent  url(../img/input-corner-right.png) no-repeat right bottom;
-    border: none;
-    border-bottom: 1px solid #62625c;
-    border-radius: 0;
-    margin: 0;
 }
 
 .project-pitch-description-outer {
@@ -803,6 +794,7 @@ input[type="text"] {
     padding:  3px 0 5px 0;
     margin: 0;
     box-shadow: none;
+    outline: none;
 }
 
 textarea {
