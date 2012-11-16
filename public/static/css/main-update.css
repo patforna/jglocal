@@ -31,7 +31,7 @@ h3 {
 
 .project-summary-area {
     background: url(../img/bg-transparent.png);
-    padding: 0 20px;
+    padding: 0 20px 12px 20px;
 }
 
 .hero-image-area {
@@ -122,7 +122,7 @@ h3 {
 }
 
 .progress-area {
-    margin: 0 5px 0 43px;
+    margin: 0 5px 0 0;
     float: left;
 }
 
@@ -150,7 +150,7 @@ h3 {
 }
 
 .target-numbers-area {
-/*    border: 1px solid #f00; */
+    border: 1px solid #f00;
     display: inline-block;
     overflow: hidden;
     clear: left;
@@ -168,7 +168,7 @@ h3 {
 }
 
 .countdown-area, .reminder-area {
-/*    border: 1px solid #f00; */
+    border: 1px solid #f00;
 }
 
 .photo-container {
@@ -452,22 +452,19 @@ h3 {
     display: inline-block;
     overflow: hidden;
     margin-top: 32px;
-    float: left;
-    clear: both;
 }
 
 .amount-raised {
-    width: 120px;
+    width: 85px;
     float: left;
-    padding: 0 7px 0 0;
-    margin: 0;
+    padding:  0;
+    margin:  0;
 }
 
 .target-amount {
     border-left: 1px solid #888080;
-    width: 138px;
-    padding: 0 0 0 7px;
-    float: left;
+    width: 87px;
+    padding:  0 0 0 7px;
 }
 
 .amounts-label {
@@ -568,23 +565,36 @@ h3 {
     padding: 0 20px;
 }
 
+.pitch-row {
+    margin-bottom: 34px;
+}
+
 .pitch-input {
     margin:  15px 0 15px 0;
 }
 
 .project-pitch-input {
     display: inline-block;
-    line-height: 1.175;
-    margin: 16px 0 22px 0;
-    font-size: 32px;
-    font-weight: bold;
+/*    line-height: 1.175;
+    margin: 16px 0 22px 0; */
+    line-height: 1.0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.project-pitch-input h1 {
+    font-size: 31px;
+    line-height: 1.0;
+    margin: 10px 0 15px 0;
 }
 
 .project-pitch-input input {
     margin: 0;
-    font-size: 36px;
-    padding: 0;
-    height: 42px;
+    font-size: 20px;
+    color: #a59c94;
+    padding: 2px;
+    height: 25px;
+    border:  1px solid #c8c8c8;
 }
 
 .project-pitch-description-outer {
@@ -638,7 +648,7 @@ input.target-amount {
 }
 
 .pitchbecause {
-    width: 460px;
+    width: 760px;
 }
 
 .map-frame-create {
@@ -790,13 +800,14 @@ input.agreetandc {
 }
 
 input[type="text"] {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #b5aca5;
-    border-radius: 0;
-    padding:  3px 0 5px 0;
+    background :#fff;
+    color: #a59c94;
+    border: 1px solid #c8c8c8;
+    -moz-box-shadow:    inset 0 0 10px #c8c8c8;
+    -webkit-box-shadow: inset 0 0 10px #c8c8c8;
+    box-shadow:         inset 0 0 10px #c8c8c8;
+    padding:  2px 0 3px 10px;
     margin: 0;
-    box-shadow: none;
     outline: none;
 }
 
@@ -811,8 +822,8 @@ textarea {
 }
 
 .project-details-area label {
-    font-weight: bold;
-    font-size: 21px;
+/*    font-weight: bold; */
+    font-size: 18px;
     margin:  0;
 }
 

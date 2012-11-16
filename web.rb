@@ -15,6 +15,10 @@ get '/create' do
   erb :create
 end
 
+get '/createupdate' do
+  erb :createupdate
+end
+
 get '/test' do
   erb :test, {:layout => false}
 end
