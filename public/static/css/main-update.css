@@ -74,6 +74,11 @@ h3 {
 }
 
 
+#create .project-summary-area, #create .hero-image-area, #create .project-details-area, #create .creator-area, #create .publish-area, #create .separator-end {
+    background: #e2e0da;
+}
+
+
 /*** module container divs ***/
 
 .project-owner-area {
@@ -652,14 +657,45 @@ input.target-amount {
 }
 
 .map-frame-create {
-    background: url(../img/map-frame-bg.png) no-repeat left top;
-    padding:  38px 0 40px 25px;
+    background: #fff;
+/*    background: url(../img/map-frame-bg.png) no-repeat left top;
+    padding:  38px 0 40px 25px; */
+    padding:  14px;
+    padding:  14px;
+    border:  1px dashed #9e9897;
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    margin: 23px;
 }
 
 .photo-frame-create {
-    background: url(../img/map-frame-bg.png) no-repeat left top;
-    padding:  38px 0 40px 25px;
+/*    background: url(../img/map-frame-bg.png) no-repeat left top; */
+    background: #fff;
+/*    padding:  38px 0 40px 25px; */
+    padding:  14px;
+    border:  1px dashed #9e9897;
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    margin: 23px;
 }
+
+
+.map-frame-create h3, .photo-frame-create h3 {
+    color: #fff;
+    margin: 0;
+    padding: 15px 0 22px 10px;
+}
+
+.map-frame-create p, .photo-frame-create p {
+    color: #fff;
+    margin: 0;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    line-height: 1.0;
+}
+
 
 .photo-frame-create-inner {
     background:  #a59c94;
@@ -676,7 +712,7 @@ input.target-amount {
 .photo-upload {
     background: url(../img/plus-icon.png) no-repeat 0 4px;
     margin:  3px 0 0 11px;
-    padding:  0px 16px 5px 15px;
+    padding:  2px 16px 5px 15px;
     border: none;
     font-size: 12px;
     color: #fff;
@@ -685,11 +721,11 @@ input.target-amount {
 }
 
 .photo-upload-outer {
-  margin: 0 auto;
+/*  margin: 0 auto; */
   width: 430px;
   height: 255px;
-  display: table-cell;
-  vertical-align: middle;
+/*  display: table-cell;
+  vertical-align: middle; */
 }
 
 .photo-upload-outer img {
@@ -725,6 +761,19 @@ input.location-input[type="text"] {
     overflow: hidden;
     margin-bottom: 35px;
 }
+
+
+.about-me-textarea {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.tell-supporters-textarea {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+
 
 .tandc {
     margin: 0 25px 20px 0;
@@ -812,19 +861,22 @@ input[type="text"] {
 }
 
 textarea {
-    background: none;
-    background: url(../img/input-corner-right.png) no-repeat right bottom;
-    border: none;
-    border-bottom:  1px solid #62625c;
-    border-radius: 0;
-    box-shadow: none;
+    background :#fff;
+    color: #a59c94;
+    border: 1px solid #c8c8c8;
+    -moz-box-shadow:    inset 0 0 10px #c8c8c8;
+    -webkit-box-shadow: inset 0 0 10px #c8c8c8;
+    box-shadow:         inset 0 0 10px #c8c8c8;
+    padding:  2px 0 3px 10px;
+    margin: 0;
     outline: none;
 }
 
 .project-details-area label {
-/*    font-weight: bold; */
     font-size: 18px;
-    margin:  0;
+    margin:  0 0 6px 0;
+    display: inline-block;
+    overflow:  hidden;
 }
 
 .label-additional-info {
@@ -931,6 +983,27 @@ nav {
 .page-content {
     padding:  0 0 30px 0;
     margin-bottom: 30px;
+}
+
+
+/*** header ***/
+.login-area {
+    color: #77256d;
+    font-size: 12px;
+    line-height: 1.0;
+    float: right;
+    text-align: right;
+    padding:  7px 0 0 0;
+    margin:  0 30px 0 0;
+}
+
+.login-area a {
+    color: #77256d;
+    text-decoration: none;
+}
+
+.login-area a:hover {
+    text-decoration: underline;
 }
 
 
