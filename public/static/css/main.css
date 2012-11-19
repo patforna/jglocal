@@ -929,6 +929,26 @@ nav {
 }
 
 
+/*** header ***/
+.login-area {
+    color: #77256d;
+    font-size: 12px;
+    line-height: 1.0;
+    float: right;
+    text-align: right;
+    padding:  7px 0 0 0;
+    margin:  0 30px 0 0;
+}
+
+.login-area a {
+    color: #77256d;
+    text-decoration: none;
+}
+
+.login-area a:hover {
+    text-decoration: underline;
+}
+
 /*** styles from current JG footer ***/
 footer .dynamic-footer {
     margin: 0px 20px !important;
