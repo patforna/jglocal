@@ -7,6 +7,7 @@
 body {
     background: url(../img/jg_local_bg.png);
     color: #4d4940;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1.project-title {
@@ -572,6 +573,9 @@ h3 {
 
 .pitch-row {
     margin-bottom: 34px;
+    display: inline-block;
+    overflow:  hidden;
+    width: 910px;
 }
 
 .pitch-input {
@@ -580,8 +584,6 @@ h3 {
 
 .project-pitch-input {
     display: inline-block;
-/*    line-height: 1.175;
-    margin: 16px 0 22px 0; */
     line-height: 1.0;
     font-size: 24px;
     font-weight: normal;
@@ -590,7 +592,7 @@ h3 {
 .project-pitch-input h1 {
     font-size: 31px;
     line-height: 1.0;
-    margin: 10px 0 15px 0;
+    margin: 23px 0 17px 0;
 }
 
 .project-pitch-input input {
@@ -639,27 +641,36 @@ h3 {
     padding:  0 0 8px 0;
 }
 
+.text-pitch {
+    display: inline-block;
+    float: left;
+}
+
 input.target-amount {
     width: 120px;
     padding: 0 0 0 5px;
 }
 
 .target-amount-outer {
-    margin-left: 10px;
+    margin: 0 10px;
+    float: left;
 }
 
 .pitchfor {
-    width: 460px;
+    width: 562px;
 }
 
 .pitchbecause {
-    width: 760px;
+    width: 790px;
+}
+
+.pitchfor, .pitchbecause {
+    float: right;
+    clear: none;
 }
 
 .map-frame-create {
     background: #fff;
-/*    background: url(../img/map-frame-bg.png) no-repeat left top;
-    padding:  38px 0 40px 25px; */
     padding:  14px;
     padding:  14px;
     border:  1px dashed #9e9897;
@@ -670,9 +681,7 @@ input.target-amount {
 }
 
 .photo-frame-create {
-/*    background: url(../img/map-frame-bg.png) no-repeat left top; */
     background: #fff;
-/*    padding:  38px 0 40px 25px; */
     padding:  14px;
     border:  1px dashed #9e9897;
     width: auto;
@@ -696,7 +705,6 @@ input.target-amount {
     line-height: 1.0;
 }
 
-
 .photo-frame-create-inner {
     background:  #a59c94;
     width: 430px;
@@ -704,7 +712,7 @@ input.target-amount {
 }
 
 .map-frame-create-inner {
-    background: url(../img/map-large.jpg) no-repeat left top;
+    background: #a59c94 url(../img/map-narrow-bg.png) no-repeat bottom;
     width: 430px;
     height: 255px;
 }
@@ -716,16 +724,13 @@ input.target-amount {
     border: none;
     font-size: 12px;
     color: #fff;
-  position: relative;
-  width: 109px;
+    position: relative;
+    width: 109px;
 }
 
 .photo-upload-outer {
-/*  margin: 0 auto; */
   width: 430px;
   height: 255px;
-/*  display: table-cell;
-  vertical-align: middle; */
 }
 
 .photo-upload-outer img {
@@ -735,8 +740,9 @@ input.target-amount {
 }
 
 .photo-upload-container {
-  background: url(../img/btn-bg-upload.png) no-repeat center;
-  float: left;
+    background: url(../img/btn-bg-upload.png) no-repeat center;
+    float: left;
+    margin:  -12px 0 0 25px;
 }
 
 .swfupload {
@@ -746,14 +752,19 @@ input.target-amount {
 }
 
 input.location-input[type="text"] {
-    background: none;
-    background: url(../img/location-input-bg.png) no-repeat top left!important;
     padding: 6px 0 7px 10px!important;
-    margin: 114px 0 0 111px!important;
+    margin: 14px 0 0 10px!important;
     color: #d7348d;
     border: none;
     border-bottom: none!important;
     font-size: 12px;
+    width: 196px;
+    background :#fff;
+    border: 1px solid #c8c8c8;
+    -moz-box-shadow:    inset 0 0 10px #c8c8c8;
+    -webkit-box-shadow: inset 0 0 10px #c8c8c8;
+    box-shadow:         inset 0 0 10px #c8c8c8;
+    outline: none;
 }
 
 .contact-details-module {
@@ -777,7 +788,7 @@ input.location-input[type="text"] {
 
 .tandc {
     margin: 0 25px 20px 0;
-    width: 190px;
+    width: 200px;
     clear: both;
     float: right;
     background: url(../img/promise-bg.png) no-repeat left top;
@@ -790,7 +801,7 @@ input.location-input[type="text"] {
     font-weight: bold;
     line-height: 1.2;
     display: block;
-    padding-left: 15px;
+    padding: 0 12px 0 15px;
     text-indent: -15px;
 }
 
@@ -845,6 +856,24 @@ input.agreetandc {
     cursor: pointer;
 }
 
+.btn-preview {
+    padding: 10px 16px 23px 13px;
+    border:  none;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+}
+
+.btn-preview.disabled {
+    background: url(../img/btn-bg-preview-disabled.png) no-repeat left top;
+    cursor: auto;
+}
+
+.btn-preview.enabled{
+    background: url(../img/btn-bg-preview-enabled.png) no-repeat left top;
+    cursor: pointer;
+}
+
 .input-outer {
 }
 
@@ -874,9 +903,28 @@ textarea {
 
 .project-details-area label {
     font-size: 18px;
+    line-height: 28px;
     margin:  0 0 6px 0;
     display: inline-block;
     overflow:  hidden;
+    padding:  0 6px 0 0;
+}
+
+.project-details-area h2 {
+    font-size: 25px;
+    line-height: 1.0;
+    margin:  0 0 15px 0;
+}
+
+.help-icon {
+/*    border: 1px solid #f00; */
+    display: inline;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.project-details-you .help-icon {
+    margin-top: 2px;
 }
 
 .label-additional-info {
