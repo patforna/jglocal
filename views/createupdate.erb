@@ -78,9 +78,8 @@
                         <label for="Creator">Contact name</label>
                     </div>
                     <div class="span8">
-                        <div class="input-outer">
-                            <input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" class="span12" placeholder="Enter your name" type="text" value="" />
-                        </div>
+                        <input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" class="span12" placeholder="Enter your name" type="text" value="" />
+
                     </div>
                     <div class="span1">
                         <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
@@ -93,21 +92,21 @@
                         <label for="">Your email</label>
                     </div>
                     <div class="span8">
-                        <div class="input-outer"><input data-val="true" class="span12" placeholder="Enter your email address" type="text" value="" /></div>
+                        <input data-val="true" class="span12" placeholder="Enter your email address" type="text" value="" />
                     </div>
                     <div class="span1">
                         <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                     </div>
                 </div>
 
-                <div class="row-fluid">
-                    <div class="contact-details-module span3">
+                <div class="row-fluid about-me-input">
+                    <div class="span3">
                         <!--<span class="field-validation-error label-additional-info">This is how errors are displayed.</span>-->
                         <label>About me</label>
                     </div>
                     <div class="span8">
-                        <!--<div class="input-outer"><input data-val="true" class="span12" placeholder="Enter your email address" type="text" value="" /></div> -->
-                        <div class="input-outer"><textarea data-val="true" class="span12 about-me-textarea"></textarea></div>
+                        <textarea data-val="true" class="span12 about-me-textarea"></textarea>
+                        <span class="char-count">3/280</span>
                     </div>
                     <div class="span1">
                         <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
@@ -115,11 +114,11 @@
                 </div>
 
                 <div class="row-fluid">
-                    <div class="contact-details-module span12">
+                    <div class="span12">
                         <label for="PageShortName">Choose your project page web address</label>
                         <div class="row-fluid">
                             <div class="span3">justgiving.com/local</div>
-                            <div class="span8"><div class="input-outer"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" class="span12" placeholder="Enter the page short name" type="text" value="" /></div></div>
+                            <div class="span8"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" class="span12" placeholder="Enter the page short name" type="text" value="" /></div>
                             <div class="span1">
                                 <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                             </div>
@@ -137,18 +136,21 @@
                 <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                 <div class="input-outer">
                     <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryProblem" maxlength="280" name="StoryProblem" class="span12 tell-supporters-textarea"></textarea>
+                    <span class="char-count">280/280</span>
                 </div>
 
                 <label for="StoryMoney">How will the money be spent?</label>
                 <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                 <div class="input-outer">
                     <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryMoney" maxlength="280" name="StoryMoney" class="span12 tell-supporters-textarea"></textarea>
+                    <span class="char-count">150/500</span>
                 </div>
 
                 <label for="StoryDeadline">When will you finish the project?</label>
                 <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                 <div class="input-outer">
                     <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryDeadline" maxlength="280" name="StoryDeadline" class="span12 tell-supporters-textarea"></textarea>
+                    <span class="char-count">280/500</span>
                 </div>
             </div>
         </div>

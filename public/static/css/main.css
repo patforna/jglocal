@@ -664,6 +664,16 @@ input.target-amount {
     clear: none;
 }
 
+.char-count {
+    background: #fedc00;
+    width: 54px;
+    padding: 2px 5px 3px 5px;
+    float: right;
+    display: inline-block;
+    overflow: hidden;
+    text-align: right;
+}
+
 .map-frame-create {
     background: #fff;
     padding:  14px;
@@ -765,21 +775,20 @@ input.location-input[type="text"] {
 .contact-details-module {
     display: inline-block;
     overflow: hidden;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
-
 
 .about-me-textarea {
     height: 300px;
-    margin-bottom: 30px;
+}
+
+.about-me-input {
+    margin-bottom: 10px;
 }
 
 .tell-supporters-textarea {
     height: 150px;
-    margin-bottom: 30px;
 }
-
-
 
 .tandc {
     margin: 0 25px 20px 0;
@@ -867,9 +876,6 @@ input.agreetandc {
 .btn-preview.enabled{
     background: url(../img/btn-bg-preview-enabled.png) no-repeat left top;
     cursor: pointer;
-}
-
-.input-outer {
 }
 
 input[type="text"] {
