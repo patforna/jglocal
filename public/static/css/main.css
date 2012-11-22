@@ -5,7 +5,7 @@
    ========================================================================== */
 
 body {
-    background: url(../img/jg_local_bg.png);
+    background: url(../img/jg-local-bg.gif);
     color: #4d4940;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,6 +33,7 @@ h3 {
 .project-summary-area {
     background: url(../img/bg-transparent.png);
     padding: 0 20px 12px 20px;
+    position: relative;
 }
 
 .hero-image-area {
@@ -456,7 +457,7 @@ h3 {
 }
 
 .amount-raised {
-    width: 85px;
+    width: 120px;
     float: left;
     padding:  0;
     margin:  0;
@@ -491,6 +492,13 @@ h3 {
 
 .target .amounts-value {
     color: #d7348d;
+}
+
+.beta-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin:  -2px -1px 0 0;
 }
 
 .project-story {
@@ -1025,9 +1033,26 @@ a.btn-donate:hover {
 /*** overrides bootstrap ***/
 
 nav {
-    background: #e5e2dd;
+    background: #fff;
     padding: 8px 0 8px 20px;
     margin-bottom: 25px;
+/*
+    -moz-box-shadow:    0px 5px #c9c4c1;
+    -webkit-box-shadow: 0px 5px #c9c4c1;
+    box-shadow:         0px 5px #c9c4c1;
+*/
+
+/*
+    -webkit-box-shadow: 0px 4px 7px rgba(58, 56, 90, 0.49);
+    -moz-box-shadow:    0px 4px 7px rgba(58, 56, 90, 0.49);
+    box-shadow:         0px 4px 7px rgba(58, 56, 90, 0.49);
+*/
+
+    -webkit-box-shadow: 0px 4px 7px #c9c4c1;
+    -moz-box-shadow:    0px 4px 7px #c9c4c1;
+    box-shadow:         0px 4px 7px #c9c4c1;
+
+
 }
 
 .page-content {
@@ -1058,6 +1083,11 @@ nav {
 
 
 /*** styles from current JG footer ***/
+footer {
+    display: none;
+}
+
+
 footer .dynamic-footer {
     margin: 0px 20px !important;
     padding-top: 30px;
