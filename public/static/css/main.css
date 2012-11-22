@@ -129,7 +129,7 @@ h3 {
 }
 
 .progress-area {
-    margin: 0 5px 0 0;
+    margin: 0 5px 0 35px;
     float: left;
 }
 
@@ -412,6 +412,15 @@ h3 {
     padding:  0 0 15px 0;
 }
 
+.dashboard {
+    margin-top: 50px;
+}
+
+.progress-donate {
+    display: inline-block;
+    overflow:  hidden;
+}
+
 #pie-container {
     font-size: 206px;
     line-height: 0.5;
@@ -454,6 +463,8 @@ h3 {
     display: inline-block;
     overflow: hidden;
     margin-top: 32px;
+    float: none;
+    clear: left;
 }
 
 .amount-raised {
