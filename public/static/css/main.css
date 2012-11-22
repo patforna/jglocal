@@ -462,10 +462,11 @@ h3 {
     margin:  0;
 }
 
-.target-amount {
+.target {
     border-left: 1px solid #888080;
     width: 87px;
     padding:  0 0 0 7px;
+    float: left;
 }
 
 .amounts-label {
@@ -488,7 +489,7 @@ h3 {
     color: #a9c100;
 }
 
-.target-amount .amounts-value {
+.target .amounts-value {
     color: #d7348d;
 }
 
