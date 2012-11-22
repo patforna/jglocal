@@ -567,7 +567,7 @@ h3 {
 }
 
 .pitch-row {
-    margin-bottom: 34px;
+    margin-bottom: 12px;
     display: inline-block;
     overflow:  hidden;
     width: 910px;
@@ -666,12 +666,19 @@ input.target-amount {
 
 .char-count {
     background: #fedc00;
-    width: 54px;
+    width: 47px;
     padding: 2px 5px 3px 5px;
     float: right;
+    clear: both;
     display: inline-block;
     overflow: hidden;
     text-align: right;
+    font-size: 10px;
+    line-height: 1.0;
+}
+
+.project-pitch-input .char-count {
+    width: 35px;
 }
 
 .map-frame-create {
