@@ -798,11 +798,15 @@ input.location-input[type="text"] {
     height: 150px;
 }
 
-.tandc {
-    margin: 0 25px 20px 0;
-    width: 200px;
-    clear: both;
+.publish-buttons {
     float: right;
+}
+
+.tandc {
+    margin: 5px 5px 20px 0;
+    width: 200px;
+    clear: none;
+    float: left;
     background: url(../img/promise-bg.png) no-repeat left top;
     padding:  7px 10px 7px 10px;
 }
@@ -828,8 +832,6 @@ input.agreetandc {
     *overflow: hidden;
 }
 
-/* */
-
 .checkbox-tandc {
     -moz-box-shadow:    3px 3px 0 0 #d8348d;
     -webkit-box-shadow: 3px 3px 0 0 #d8348d;
@@ -837,9 +839,9 @@ input.agreetandc {
 }
 
 .publish {
-    /*    width: 55%; */
-    float: right;
-    clear: both;
+    float: left;
+    clear: none;
+    margin:  0 0 0 70px;
 }
 
 .field-validation-error {
@@ -849,13 +851,13 @@ input.agreetandc {
     font-weight: normal;
 }
 
-
 .btn-publish {
-    padding: 18px 35px 23px 28px;
+    padding: 14px 25px 20px 23px;
     border:  none;
     font-size: 24px;
+    font-weight: bold;
     color: #fff;
-    float: right;
+    float: left;
 }
 
 .btn-publish.disabled {
@@ -869,11 +871,12 @@ input.agreetandc {
 }
 
 .btn-preview {
-    padding: 10px 16px 23px 13px;
+    padding: 10px 20px 14px 18px;
     border:  none;
     font-size: 18px;
     color: #fff;
-    float: right;
+    float: left;
+    margin-top: 8px;
 }
 
 .btn-preview.disabled {
