@@ -129,14 +129,12 @@ h3 {
 }
 
 .progress-area {
-    margin: 0 5px 0 35px;
-    float: left;
+    margin: 0 0 0 28px;
 }
 
 .donate-area {
     width: 200px;
-    float: left;
-    margin:  54px 0 0 0;
+    margin:  5px 0 0 31px;
 }
 
 .remind-link {
@@ -413,7 +411,7 @@ h3 {
 }
 
 .dashboard {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .progress-donate {
@@ -422,7 +420,8 @@ h3 {
 }
 
 #pie-container {
-    font-size: 206px;
+/*    font-size: 206px; */
+    font-size: 220px;
     line-height: 0.5;
     position: relative;
 }
@@ -444,8 +443,8 @@ h3 {
     display: inline-block;
     overflow: hidden;
     position: absolute;
-    left: 50px;
-    top: 52px;
+    left: 56px;
+    top: 63px;
     width: 70px;
     text-align: center;
     font-size: 11px;
@@ -462,7 +461,7 @@ h3 {
 .amounts-area {
     display: inline-block;
     overflow: hidden;
-    margin-top: 32px;
+    margin-top: 8px;
     float: none;
     clear: left;
 }
@@ -476,7 +475,8 @@ h3 {
 
 .target {
     border-left: 1px solid #888080;
-    width: 87px;
+    border-left-style: dashed;
+    width: 140px;
     padding:  0 0 0 7px;
     float: left;
 }
@@ -999,11 +999,11 @@ a.btn-donate:hover {
 }
 
 .btn-donate {
-    font-size: 1.3em;
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
-    background: url(../img/btn-bg-donate.png) no-repeat left top;
-    padding: 10px 55px 15px 55px;
+    background: url(../img/donate-button.png) no-repeat left top;
+    padding: 8px 55px 15px 66px;
     display: inline-block;
     overflow: hidden;
     text-decoration: none;
