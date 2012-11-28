@@ -19,6 +19,10 @@ get '/createupdate' do
   erb :createupdate
 end
 
+get '/error' do
+  erb :error
+end
+
 get '/test' do
   erb :test, {:layout => false}
 end
