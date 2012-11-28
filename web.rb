@@ -34,3 +34,9 @@ end
 get '/sass' do
   scss :sample, :style => :expanded
 end
+
+get '/local/*' do
+  file = File.join(settings.public_folder, params[:splat].join('/'))
+  halt(404) if !File.exists?(file)
+  send_file file
+end
