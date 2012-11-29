@@ -828,7 +828,7 @@ input.location-input[type="text"] {
 }
 
 .tandc {
-    margin: 5px 5px 20px 0;
+    margin: -5px 5px 20px 0;
     width: 210px;
     clear: none;
     float: left;
