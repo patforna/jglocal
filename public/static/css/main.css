@@ -601,7 +601,7 @@ h3 {
     margin-bottom: 12px;
     display: inline-block;
     overflow:  hidden;
-    width: 910px;
+    width: 940px;
 }
 
 .pitch-input {
@@ -628,6 +628,14 @@ h3 {
     padding: 2px;
     height: 25px;
     border:  1px solid #c8c8c8;
+}
+
+.project-pitch-input .help-icon {
+    margin-top: 0;
+}
+
+.project-pitch-input .char-count {
+    margin:  0 32px 0 0;
 }
 
 .project-pitch-description-outer {
@@ -706,6 +714,7 @@ input.target-amount {
     text-align: right;
     font-size: 10px;
     line-height: 1.0;
+    margin: 0;
 }
 
 .project-pitch-input .char-count {
@@ -963,6 +972,15 @@ textarea {
     display: inline;
     vertical-align: middle;
     margin-top: -4px;
+}
+
+.help-icon-container {
+    display: inline-block;
+    overflow: hidden;
+    float: right;
+    clear: none;
+    width: 30px;
+    text-align: right;
 }
 
 .project-details-you .help-icon {
