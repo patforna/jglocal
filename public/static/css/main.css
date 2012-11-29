@@ -829,10 +829,11 @@ input.location-input[type="text"] {
 
 .tandc {
     margin: 5px 5px 20px 0;
-    width: 200px;
+    width: 210px;
     clear: none;
     float: left;
     background: url(/local/static/img/promise-bg.png) no-repeat left top;
+    background-size: 220px 80px;
     padding:  7px 10px 7px 10px;
 }
 
