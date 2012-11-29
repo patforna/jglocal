@@ -19,6 +19,10 @@ get '/createupdate' do
   erb :createupdate
 end
 
+get '/preview' do
+  erb :preview
+end
+
 get '/error' do
   erb :error
 end
