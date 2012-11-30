@@ -734,6 +734,7 @@ input.target-amount {
     font-size: 10px;
     line-height: 1.0;
     margin: 0;
+    height: 10px;
 }
 
 .project-pitch-input .char-count {
