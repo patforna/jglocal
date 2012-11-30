@@ -683,10 +683,24 @@ h3 {
 input.target-amount {
     width: 120px;
     padding: 0 0 0 5px;
+    float: left;
 }
 
 .target-amount-outer {
     margin: 0 10px;
+    float: left;
+}
+
+.target-amount-outer span {
+    color: #887f80;
+    font-size: 12px;
+    line-height: 1.0;
+    display: inline-block;
+    overflow: hidden;
+    width: 120px;
+    padding-top: 4px;
+    text-align: center;
+    clear: both;
     float: left;
 }
 
