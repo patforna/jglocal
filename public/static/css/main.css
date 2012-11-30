@@ -708,6 +708,11 @@ input.target-amount {
     width: 562px;
 }
 
+.pitchfor-group {
+    display: block;
+    overflow: hidden;
+}
+
 .pitchbecause {
     width: 790px;
 }
@@ -1141,6 +1146,20 @@ a.btn-donate:hover {
 
 .right {
     float: right;
+}
+
+.error {
+    color: #ed1b24;
+}
+
+.error-container {
+    border:  1px solid #ed1b24;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.error-container-inner {
+    padding:  10px 10px 10px 15px;
 }
 
 
