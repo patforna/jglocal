@@ -691,14 +691,14 @@ input.target-amount {
     float: left;
 }
 
-.target-amount-outer span {
+.target-amount-outer .max-amount {
     color: #887f80;
     font-size: 12px;
     line-height: 1.0;
     display: inline-block;
     overflow: hidden;
     width: 120px;
-    padding-top: 4px;
+    padding: 4px 0 0 5px;
     text-align: center;
     clear: both;
     float: left;
