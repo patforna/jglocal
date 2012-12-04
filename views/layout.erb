@@ -29,17 +29,31 @@
 
 </head>
 <body id="create">
-    <nav class="hidden-phone">
-        <div class="container">
-            <img src="static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
-            <!-- login details -->
-            <div class="login-area">
-                Hello <strong>Sylvia</strong> (not you? <a href="">Log out</a>)
-                <!--<a href="">Log in</a> -->
-            </div>
+
+<!--    <div class="navbar navbar-static-top"> -->
+<!--
+    <div class="navbar">
+        <div class="navbar-inner">
+-->
+            <nav>
+                <div class="nav-inner">
+                <!--<div class="container-fluid">-->
+                    <img src="static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
+                    <!-- login details -->
+                    <span class="login-area">
+                        Hello <strong>Sylvia</strong> (not you? <a href="">Log out</a>)
+                        <!--<a href="">Log in</a> -->
+                    </span>
+                <!--</div> -->
+                </div>
+            </nav>
+<!--
         </div>
-    </nav>
-    <div class="container">
+    </div>
+-->
+
+
+    <div class="container-fluid">
         <div class="page-content">
         <%= yield %>
             <!-- Start JustGiving footer -->
