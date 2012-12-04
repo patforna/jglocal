@@ -177,34 +177,52 @@ h3 {
     display: table;
 }
 .photo-frame {
-    background: url(/local/static/img/map-frame-bg.png) no-repeat left top;
-    padding: 38px 0 40px 25px;
     display: table-cell;
     vertical-align: middle;
+
+    background: #fff;
+    padding: 12px 15px;
+    margin: 10px 0 10px 0!important;
+/*    display: inline-block;
+    overflow:  hidden; */
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .photo-frame-inner {
-    width: 430px;
-    height: 255px;
+/*    width: 430px;
+    height: 255px; */
+    background:  #fff;
+    width: 100%!important;
 }
 
 .photo-frame img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .map-frame {
-    background: url(/local/static/img/map-frame-bg.png) no-repeat left top;
-    padding:  38px 0 40px 25px;
+    padding: 12px 15px;
+    background: #fff;
+    margin: 1px 0 10px 0!important;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 #map-canvas {
-    width: 430px;
-    height: 255px;
+/*    width: 430px;
+    height: 255px; */
+    background: #fff;
+    width: 100%!important;
+    height: 300px;
 }
 
 #location {
-    margin: -18px 0 2px 25px;
+    margin: 0px 0 2px 20px;
 }
 
 .update-area-inner {
@@ -1466,6 +1484,13 @@ footer ul {
         margin-bottom: 0;
     }
 
+    .project-owner-area  p {
+        font-size: 11px;
+        line-height: 1.0;
+        margin: 0;
+        padding: 0;
+    }
+
     .project-owner-area img {
         float: left;
         width: 30px;
@@ -1478,33 +1503,47 @@ footer ul {
         height: 30px;
     }
 
-/* */
+/*** photo and map styles ***/
 
-
-
-
-/* */
     .photo-frame {
-        background: none;
-        padding: 0;
-        margin: 0;
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .photo-frame-inner {
-    /*    width: 430px;
-        height: 255px;*/
-        background:  #fff;
+        background: #fff;
+        padding: 7px;
+        margin: 10px 0 10px 0!important;
+        display: inline-block;
+        overflow:  hidden;
         -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
         -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
         box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
     }
 
-    .photo-frame img {
-
+    .photo-frame-inner {
+        background:  #fff;
+        width: 100%!important;
     }
 
+    .photo-frame img {
+        width: 100%;
+        height: auto;
+    }
+
+    .map-frame {
+        background: #fff;
+        padding: 7px;
+        margin: 1px 0 10px 0!important;
+        -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    #map-canvas {
+        background: #fff;
+        width: 100%!important;
+        height: 200px!important;
+    }
+
+    #location {
+        margin: 0 0 2px 10px;
+    }
 
 
 /*** ***/
@@ -1518,21 +1557,6 @@ footer ul {
         font-weight: bold;
         font-size: 18px;
         margin: 0;
-    }
-
-    #map-canvas {
-        height: 100px;
-        width: 265px;
-    }
-/* */
-    .map-frame {
-        background: #fff;
-        padding: 4px 6px 5px 6px;
-        margin: 0 0 0 -8px;
-    }
-
-    #location {
-        margin: 0 0 2px 6px;
     }
 
     .social-area, .countdown-area, .reminder-area {
