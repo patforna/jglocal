@@ -1172,7 +1172,7 @@ a.btn-donate:hover {
     color: #ed1b24;
 }
 
-input.input-error, textarea.input-error {
+input.input-validation-error, textarea.input-validation-error {
     border: 1px solid #ed1b24;
 }
 
