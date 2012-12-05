@@ -1141,6 +1141,7 @@ a.btn-donate:hover {
 }
 
 .btn-donate {
+/*
     font-size: 22px;
     font-weight: bold;
     color: #fff;
@@ -1149,6 +1150,43 @@ a.btn-donate:hover {
     display: inline-block;
     overflow: hidden;
     text-decoration: none;
+*/
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+
+    padding: 8px 30px 9px 68px;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    background: url(/local/static/img/donate-btn-g-icon-bg.png) no-repeat 8px 5px;
+
+
+    /* background: #a54f97; */ /* Old browsers */
+/*    */
+
+
+
+}
+
+.donate-btn-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #913f8b;
+    background: -moz-linear-gradient(top,  #a54f97 0%, #6e2264 26%, #6d2764 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a54f97), color-stop(26%,#6e2264), color-stop(100%,#6d2764)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a54f97', endColorstr='#6d2764',GradientType=0 ); /* IE6-9 */
+
 }
 
 .btn-donate:hover {
@@ -1348,11 +1386,10 @@ footer ul {
     }
     
     h1.project-title {
-        line-height: 1.0;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 1.175;
-        margin: 5px 0 3px 0;
+        font-size: 15px;
+        line-height: 1.18;
+        margin: 5px 0 6px 0;
     }
 
     h2 {
@@ -1415,9 +1452,8 @@ footer ul {
     }
 
     .bottom-bar .btn-donate {
-        background: url(/local/static/img/donate-button.png) no-repeat left top;
-        background-size: 87% 100%;
-        padding: 8px 35px 15px 46px;
+        font-size: 18px;
+        padding: 8px 20px 9px 58px;
     }
 
     .bottom-bar .amounts-area {
@@ -1452,11 +1488,11 @@ footer ul {
     }
 
     .project-summary-area {
-        padding: 0 10px 12px 10px;
+        padding: 0 10px 0 10px;
     }
 
     .hero-image-area {
-        padding: 0 10px 15px 10px;
+        padding: 0 10px 0 10px;
     }
 
     .project-details-area {
@@ -1485,7 +1521,15 @@ footer ul {
     }
 
     .project-owner-area  p {
+        font-size: 10px;
+        line-height: 1.0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-owner-area span {
         font-size: 11px;
+        font-weight: bold;
         line-height: 1.0;
         margin: 0;
         padding: 0;
@@ -1542,7 +1586,7 @@ footer ul {
     }
 
     #location {
-        margin: 0 0 2px 10px;
+        margin: -8px 0 2px 5px;
     }
 
 
@@ -1605,6 +1649,7 @@ footer ul {
 
     .project-summary-area .creator-name {
         font-weight: bold;
+
     }
 
     .donation-date {
