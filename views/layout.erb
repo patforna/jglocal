@@ -28,32 +28,65 @@
     </script>
 
 </head>
-<body id="create">
+<body>
 
-<!--    <div class="navbar navbar-static-top"> -->
+    <nav>
+        <div class="container">
+            <div class="nav-inner">
+                <img src="static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
+                <span class="login-area">
+                    Hello <strong>Sylvia</strong> (not you? <a href="">Log out</a>)
+                </span>
+            </div>
+        </div>
+    </nav>
+
 <!--
-    <div class="navbar">
-        <div class="navbar-inner">
--->
-            <nav>
-                <div class="nav-inner">
-                <!--<div class="container-fluid">-->
-                    <img src="static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
-                    <!-- login details -->
-                    <span class="login-area">
-                        Hello <strong>Sylvia</strong> (not you? <a href="">Log out</a>)
-                        <!--<a href="">Log in</a> -->
-                    </span>
-                <!--</div> -->
+    <div class="status-panel">
+        <div class="container">
+            <div class="status-panel-inner">
+                <div class="row-fluid">
+                    <div class="span5">
+                        <div class="status-addupdate">
+                            <h2>Send donors a project update?</h2>
+                            <a href="" class="button_status-addupdate">Add a project update</a>
+                        </div>
+
+                        <h3>Update your project status?</h3>
+                        <p>Your page is now active. Keep donors and prospective donors informed of project developments by posting project updates that will be emailed to your donors.</p>
+                        <ul class="status-indicator">
+                            <li class="complete">Fundraising page is active</li>
+                            <li class="ticked">
+                                Funded and ready for doing
+                                <button type="button" class="button-status-incomplete">Project is 'Being done'</button>
+                            </li>
+                            <li>
+                                Being done
+                                <button type="button" class="button-status-incomplete">Project is 'Complete'</button>
+                            </li>
+                            <li>
+                                Completed
+                                <button type="button" class="button-status-incomplete">Create final report</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span4">
+                        <h2>Edit your thank you message?</h2>
+
+                        <div class="row-fluid">
+                            <textarea class="status-thankyou-input span12"></textarea>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <button type="button" class="button-status-update">Update</button>
+                    </div>
                 </div>
-            </nav>
-<!--
+            </div>
         </div>
     </div>
 -->
 
-
-    <div class="container-fluid">
+    <div class="container">
         <div class="page-content">
         <%= yield %>
             <!-- Start JustGiving footer -->
