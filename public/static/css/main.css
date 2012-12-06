@@ -242,6 +242,7 @@ h3 {
     padding: 0;
     width: 100%;
     outline: none;
+    cursor: auto!important;
 }
 
 .update-submit-container {
@@ -307,6 +308,7 @@ h3 {
     padding: 5px 8px 6px 8px;
     border: none;
     color: #128d38;
+    cursor: auto!important;
 }
 
 .donations-updates ul.history {
@@ -1669,4 +1671,67 @@ footer ul {
 
 .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
     width: 100% !important;
+}
+
+.fake-fb-comments {
+    height: 160px; 
+    width: 550px;
+}
+
+.fake-fb-comments textarea {
+    height: 26px;
+    font-size: 11px;
+    margin-top: 8px;
+    width: 95%;
+    cursor: auto;
+}
+
+.fake-fb-comments img {
+    padding: 10px 6px 30px 10px;
+}
+
+.fake-fb-comments .comment-div {
+    float: right;
+    width: 87%;
+}
+
+.fake-fb-comments .comment-span {
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    margin: 6px 10px 0px 0px;
+    padding: 4px 1px 1px 1px;
+    width: 25%;
+    cursor: auto;
+}
+
+.fake-fb-comments .sx_comments_cfavicon {
+    width: 14px;
+    height: 14px;
+    background-position: -0px -187px;
+}
+
+.fake-fb-comments .sp_comments {
+    background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yX/x/U9AwDhGgiju.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: 3px;
+}
+
+.fake-fb-comments .plugin-span {
+    font-size: 9px;
+    margin: -24px 0px 0px 21px;
+}
+
+.fake-fb-comments .caret {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #000000;
+    display: inline-block;
+    height: 0;
+    opacity: 0.5;
+    vertical-align: top;
+    width: 2px;
 }
