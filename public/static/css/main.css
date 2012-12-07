@@ -191,17 +191,21 @@ h3 {
 }
 
 .photo-frame-inner {
-/*    width: 430px;
-    height: 255px; */
+    width: 430px;
+    height: 255px;
     background:  #fff;
-    width: 100%!important;
+/*    width: 100%!important; */
 }
 
 .photo-frame img {
     display: block;
     margin: 0 auto;
+    width: 430px;
+    height: 255px;
+/*
     width: 100%;
     height: auto;
+*/
 }
 
 .map-frame {
@@ -211,14 +215,18 @@ h3 {
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    overflow: hidden;
 }
 
 #map-canvas {
-/*    width: 430px;
-    height: 255px; */
+    width: 430px;
+    height: 255px;
     background: #fff;
+/*
     width: 100%!important;
     height: 300px;
+*/
 }
 
 #location {
@@ -1515,6 +1523,10 @@ footer ul {
         padding: 8px 0 8px 10px;
     }
 
+    .page-content {
+/*        margin: 10px 0 30px 0; */
+    }
+
     .bottom-bar {
         position: fixed;
         bottom: 0;
@@ -1552,7 +1564,11 @@ footer ul {
 
     .bottom-bar .btn-donate {
         font-size: 18px;
-        padding: 8px 20px 9px 58px;
+        padding: 8px 14px 9px 52px;
+    }
+
+    .bottom-bar .donate-btn-container {
+        padding-right: 10px;
     }
 
     .bottom-bar .amounts-area {
@@ -1662,6 +1678,7 @@ footer ul {
     .photo-frame-inner {
         background:  #fff;
         width: 100%!important;
+        height: auto;
     }
 
     .photo-frame img {
@@ -1688,8 +1705,6 @@ footer ul {
         margin: -8px 0 2px 5px;
     }
 
-
-/*** ***/
     .project-details-area label {
         font-weight: bold;
         font-size: 18px;
