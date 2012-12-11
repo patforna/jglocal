@@ -1116,7 +1116,6 @@ textarea {
 
 
 
-
 /*** create project status panel ***/
 
 .status-panel {
@@ -1134,7 +1133,7 @@ textarea {
     width: 100%;
 }
 
-a.button_status-addupdate, .button-status-incomplete, .button-status-update {
+a.button_status-addupdate, .button-status-incomplete, .button-status-update, .button-status-upload, .button-status-final-report {
     color: #fff;
     font-size: 11px;
     border: none;
@@ -1159,27 +1158,49 @@ a.button_status-addupdate {
     background: #97bddc;
     float: right;
     background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat;
-
 }
 
 .status-thankyou-input {
     height: 222px;
+}
 
+.status-money-spent-input {
+    height: 110px;
 }
 
 .button-status-update {
-    margin: 225px 0 0 0;
+    margin: 194px 0 0 10px;
     background: url(/local/static/img/btn-green-bg.png) no-repeat;
     width: 82px;
     height: 28px;
+    float: left;
+    clear: none;
+}
+
+.button-status-upload {
+    margin: 32px 0 0 10px;
+    background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
+    width: 134px;
+    height: 28px;
+    float: left;
+    clear: none;
+}
+
+.button-status-final-report {
+    margin: 82px 0 0 10px;
+    background: url(/local/static/img/btn-blue-bg.png) no-repeat;
+    width: 134px;
+    height: 28px;
+    float: left;
+    clear: none;
 }
 
 .status-panel h2 {
     font-size: 14px;
     line-height: 1.0;
     font-weight: bold;
-    width: auto;
-    display: inline-block;
+    padding: 0;
+    margin: 0 0 3px 0;
 }
 
 .status-panel h3 {
@@ -1218,6 +1239,39 @@ a.button_status-addupdate {
 .status-indicator li.complete {
     background: url(/local/static/img/status-li-solid.png) no-repeat 0 9px;
     color: #5ca2d3;
+}
+
+.status-thankyou, .status-photo, .status-money-spent {
+    width: 100%;
+    display: inline-block;
+    overflow:  hidden;
+}
+
+.status-thankyou-inner-l, .status-money-spent-inner-l, .status-photo-inner-l {
+    float: left;
+    clear: none;
+}
+
+.status-thankyou-inner-l, .status-money-spent-inner-l {
+    width: 53.7%;
+
+}
+
+.status-photo-inner-l {
+    width: 45.54%;
+}
+
+.status-thankyou-inner-r, .status-money-spent-inner-r, .status-photo-inner-r {
+    float: right;
+    clear: none;
+}
+
+.status-thankyou-inner-r, .status-money-spent-inner-r {
+    width: 46.3%;
+}
+
+.status-photo-inner-r {
+    width: 54.46%;
 }
 
 .photo-upload-info {
@@ -1489,6 +1543,7 @@ footer ul {
         display: inline-block;
         overflow: hidden;
         margin: 0 10px 0 0;
+        padding:  3px 0 0 0;
         width: 120px;
     }
     
@@ -1524,7 +1579,7 @@ footer ul {
     }
 
     .page-content {
-/*        margin: 10px 0 30px 0; */
+        margin: 0 0 30px 0;
     }
 
     .bottom-bar {
@@ -1597,7 +1652,14 @@ footer ul {
         padding: 0 0 0 5px;
     }
 
+/*
     .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+*/
+
+    .container {
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -1611,7 +1673,7 @@ footer ul {
     }
 
     .project-details-area {
-        padding: 20px 10px 15px 10px;
+        padding: 0 10px 15px 10px;
     }
 
     .creator-area {
