@@ -10,8 +10,16 @@ get '/project' do
   erb :project
 end
 
+get '/projectstatusthankyou' do
+  erb :projectstatusthankyou
+end
+
 get '/projectstatus' do
   erb :projectstatus
+end
+
+get '/timeline' do
+  erb :timeline
 end
 
 get '/create' do

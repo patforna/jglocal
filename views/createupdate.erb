@@ -1,201 +1,205 @@
-<form method="POST">
+<div class="container">
+    <div class="page-content">
+        <form method="POST">
 
-    <div class="project-summary-area">
-        <img src="static/img/beta.png" width="51" height="51" class="beta-image" alt="beta" />
-        <div class="row-fluid">
-            <div class="span12 project-pitch-input">
-                <h1>Describe your project in a sentence</h1>
-                <div class="pitch-row">
-                    <span class="text-pitch">
-                        We're raising
-                        &pound;
-                    </span>
-                    <span class="input-outer target-amount-outer">
-                        <input data-val="true" data-val-length="TBD: Enter the amount you want to raise" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" class="target-amount" type="text" value="" />
-                        <span class="max-amount">Max &pound;1,000</span>
-                    </span>
-                    <span class="text-pitch">to</span>
+            <div class="project-summary-area">
+                <img src="static/img/beta.png" width="51" height="51" class="beta-image" alt="beta" />
+                <div class="row-fluid">
+                    <div class="span12 project-pitch-input">
+                        <h1>Describe your project in a sentence</h1>
+                        <div class="pitch-row">
+                            <span class="text-pitch">
+                                We're raising
+                                &pound;
+                            </span>
+                            <span class="input-outer target-amount-outer">
+                                <input data-val="true" data-val-length="TBD: Enter the amount you want to raise" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" class="target-amount" type="text" value="" />
+                                <span class="max-amount">Max &pound;1,000</span>
+                            </span>
+                            <span class="text-pitch">to</span>
 
-                    <div class="pitchfor-group">
-                        <span class="input-outer">
-                            <div class="help-icon-container"><img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/></div>
-                            <input data-val="true" data-val-length="TBD: Error Message for Pitch-For too long" data-val-length-max="50" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" name="PitchFor" class="pitchfor" type="text" value="" />
-                        </span>
-                        <span class="char-count">3/280</span>
-                    </div>
+                            <div class="pitchfor-group">
+                                <span class="input-outer">
+                                    <div class="help-icon-container"><img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/></div>
+                                    <input data-val="true" data-val-length="TBD: Error Message for Pitch-For too long" data-val-length-max="50" data-val-required="TBD: Enter a cause" id="PitchFor" maxlength="50" name="PitchFor" class="pitchfor" type="text" value="" />
+                                </span>
+                                <span class="char-count">3/280</span>
+                            </div>
 
-                </div>
-                <div class="pitch-row">
-                    <span class="text-pitch">because</span>
-                    <span class="input-outer">
-                        <div class="help-icon-container"><img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/></div>
-                        <input data-val="true" data-val-length="TBD: Error Message for Pitch-Because too long" data-val-length-max="50" data-val-required="TBD: Enter a reason" id="PitchBecause" maxlength="50" name="PitchBecause" class="pitchbecause" type="text" value="" />
-                    </span>
-                    <span class="char-count">3/280</span>
+                        </div>
+                        <div class="pitch-row">
+                            <span class="text-pitch">because</span>
+                            <span class="input-outer">
+                                <div class="help-icon-container"><img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/></div>
+                                <input data-val="true" data-val-length="TBD: Error Message for Pitch-Because too long" data-val-length-max="50" data-val-required="TBD: Enter a reason" id="PitchBecause" maxlength="50" name="PitchBecause" class="pitchbecause" type="text" value="" />
+                            </span>
+                            <span class="char-count">3/280</span>
 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row-fluid separator">
-        <div class="separator-end left"></div>
-        <div class="separator-end right"></div>
-    </div>
-
-    <div class="hero-image-area">
-        <div class="row-fluid">
-            <div class="span6">
-                <div class="photo-frame-create">
-                    <div class="photo-frame-create-inner">
-                        <div class="photo-upload-outer">
-                            <h3>Upload a project picture</h3>
-                            <p>Your photo is one of the most important things you can add to your project page. It should visually explain the problem that you're trying to solve.</p>
-                            <img src="@Url.Content("~/static/img/ajax-loader-24x24.gif")" style="display: none"/>
                         </div>
                     </div>
                 </div>
-                <div class="span3">
-                    <div class="photo-upload-container">
-                        <button class="photo-upload ">Upload your picture</button>
+            </div>
+
+            <div class="row-fluid separator">
+                <div class="separator-end left"></div>
+                <div class="separator-end right"></div>
+            </div>
+
+            <div class="hero-image-area">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="photo-frame-create">
+                            <div class="photo-frame-create-inner">
+                                <div class="photo-upload-outer">
+                                    <h3>Upload a project picture</h3>
+                                    <p>Your photo is one of the most important things you can add to your project page. It should visually explain the problem that you're trying to solve.</p>
+                                    <img src="@Url.Content("~/static/img/ajax-loader-24x24.gif")" style="display: none"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="photo-upload-container">
+                                <button class="photo-upload ">Upload your picture</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="map-frame-create">
+                            <div class="map-frame-create-inner">
+                                <h3>Enter the project location</h3>
+                                <p>Show where your project is based so potential supporters can see where you'll be making a difference</p>
+        <!--                        <input type="text" class="location-input" value="Enter the location of your project" /> -->
+                                    <input autocomplete="off" class="location-input" data-val="true" data-val-length="Location should be less than 100 characters" data-val-length-max="100" data-val-required="Location is required" id="Location" maxlength="100" name="Location" placeholder="Enter the project location" type="text" value=""/>
+
+                <!--
+                                <div id="map-canvas"></div>
+                                <div id="location">9 Stavordale Road, London, United Kingdom</div>
+                -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="span6">
-                <div class="map-frame-create">
-                    <div class="map-frame-create-inner">
-                        <h3>Enter the project location</h3>
-                        <p>Show where your project is based so potential supporters can see where you'll be making a difference</p>
-<!--                        <input type="text" class="location-input" value="Enter the location of your project" /> -->
-                            <input autocomplete="off" class="location-input" data-val="true" data-val-length="Location should be less than 100 characters" data-val-length-max="100" data-val-required="Location is required" id="Location" maxlength="100" name="Location" placeholder="Enter the project location" type="text" value=""/>
 
-        <!--
-                        <div id="map-canvas"></div>
-                        <div id="location">9 Stavordale Road, London, United Kingdom</div>
-        -->
-                    </div>
-                </div>
+            <div class="row-fluid separator">
+                <div class="separator-end left"></div>
+                <div class="separator-end right"></div>
             </div>
-        </div>
-    </div>
 
-    <div class="row-fluid separator">
-        <div class="separator-end left"></div>
-        <div class="separator-end right"></div>
-    </div>
-
-    <div class="project-details-area">
-        <div class="row-fluid">
-            <div class="span6 project-details-you">
-
-                <h2>Tell supporters about yourself</h2>
-
-                <div class="row-fluid contact-details-module">
-                    <div class="span3">
-                        <!-- <span class="field-validation-error label-additional-info" data-valmsg-for="Creator" data-valmsg-replace="true">This is how errors are displayed</span> -->
-                        <label for="Creator">Contact name</label>
-                    </div>
-                    <div class="span8">
-                        <input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" class="span12" placeholder="Enter your name" type="text" value="" />
-
-                    </div>
-                    <div class="span1">
-                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                    </div>
-                </div>
-
+            <div class="project-details-area">
                 <div class="row-fluid">
-                    <div class="contact-details-module span3">
-                        <!--<span class="field-validation-error label-additional-info">This is how errors are displayed.</span>-->
-                        <label for="">Your email</label>
-                    </div>
-                    <div class="span8">
-                        <input data-val="true" class="span12" placeholder="Enter your email address" type="text" value="" />
-                    </div>
-                    <div class="span1">
-                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                    </div>
-                </div>
+                    <div class="span6 project-details-you">
 
-                <div class="row-fluid about-me-input">
-                    <div class="span3">
-                        <!--<span class="field-validation-error label-additional-info">This is how errors are displayed.</span>-->
-                        <label>About me</label>
-                    </div>
-                    <div class="span8">
-                        <textarea data-val="true" class="span12 about-me-textarea"></textarea>
-                        <span class="char-count">3/280</span>
-                    </div>
-                    <div class="span1">
-                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                    </div>
-                </div>
+                        <h2>Tell supporters about yourself</h2>
 
-                <div class="row-fluid">
-                    <div class="span12">
-                        <label for="PageShortName">Choose your project page web address</label>
-                        <div class="row-fluid">
-                            <div class="span3">justgiving.com/local</div>
-                            <div class="span8"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" class="span12" placeholder="Enter the page short name" type="text" value="" /></div>
+                        <div class="row-fluid contact-details-module">
+                            <div class="span3">
+                                <!-- <span class="field-validation-error label-additional-info" data-valmsg-for="Creator" data-valmsg-replace="true">This is how errors are displayed</span> -->
+                                <label for="Creator">Contact name</label>
+                            </div>
+                            <div class="span8">
+                                <input data-val="true" data-val-length="TBD: Error Message for Creator too long" data-val-length-max="100" data-val-required="TBD: Enter your name" id="Creator" maxlength="100" name="Creator" class="span12" placeholder="Enter your name" type="text" value="" />
+
+                            </div>
                             <div class="span1">
                                 <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
                             </div>
                         </div>
 
+                        <div class="row-fluid">
+                            <div class="contact-details-module span3">
+                                <!--<span class="field-validation-error label-additional-info">This is how errors are displayed.</span>-->
+                                <label for="">Your email</label>
+                            </div>
+                            <div class="span8">
+                                <input data-val="true" class="span12" placeholder="Enter your email address" type="text" value="" />
+                            </div>
+                            <div class="span1">
+                                <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid about-me-input">
+                            <div class="span3">
+                                <!--<span class="field-validation-error label-additional-info">This is how errors are displayed.</span>-->
+                                <label>About me</label>
+                            </div>
+                            <div class="span8">
+                                <textarea data-val="true" class="span12 about-me-textarea"></textarea>
+                                <span class="char-count">3/280</span>
+                            </div>
+                            <div class="span1">
+                                <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <label for="PageShortName">Choose your project page web address</label>
+                                <div class="row-fluid">
+                                    <div class="span3">justgiving.com/local</div>
+                                    <div class="span8"><input autocomplete="off" data-val="true" data-val-length="TBD: Error Message for Custom Url too long" data-val-length-max="100" data-val-required="TBD: Enter a valid page short name" id="PageShortName" maxlength="100" name="PageShortName" class="span12" placeholder="Enter the page short name" type="text" value="" /></div>
+                                    <div class="span1">
+                                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span6">
+
+                        <h2>Tell supporters about your project</h2>
+
+                        <label for="StoryProblem">What&#39;s the problem you&#39;re trying to solve?</label>
+                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                        <div class="input-outer">
+                            <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryProblem" maxlength="280" name="StoryProblem" class="span12 tell-supporters-textarea"></textarea>
+                            <span class="char-count">280/280</span>
+                        </div>
+
+                        <label for="StoryMoney">How will the money be spent?</label>
+                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                        <div class="input-outer">
+                            <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryMoney" maxlength="280" name="StoryMoney" class="span12 tell-supporters-textarea"></textarea>
+                            <span class="char-count">150/500</span>
+                        </div>
+
+                        <label for="StoryDeadline">When will you finish the project?</label>
+                        <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
+                        <div class="input-outer">
+                            <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryDeadline" maxlength="280" name="StoryDeadline" class="span12 tell-supporters-textarea"></textarea>
+                            <span class="char-count">280/500</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="span6">
 
-                <h2>Tell supporters about your project</h2>
-
-                <label for="StoryProblem">What&#39;s the problem you&#39;re trying to solve?</label>
-                <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                <div class="input-outer">
-                    <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryProblem" maxlength="280" name="StoryProblem" class="span12 tell-supporters-textarea"></textarea>
-                    <span class="char-count">280/280</span>
-                </div>
-
-                <label for="StoryMoney">How will the money be spent?</label>
-                <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                <div class="input-outer">
-                    <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryMoney" maxlength="280" name="StoryMoney" class="span12 tell-supporters-textarea"></textarea>
-                    <span class="char-count">150/500</span>
-                </div>
-
-                <label for="StoryDeadline">When will you finish the project?</label>
-                <img src="static/img/help-icon.png" width="24" height="23" class="help-icon"/>
-                <div class="input-outer">
-                    <textarea data-val="true" data-val-length="TBD" data-val-length-max="280" data-val-required="TBD" id="StoryDeadline" maxlength="280" name="StoryDeadline" class="span12 tell-supporters-textarea"></textarea>
-                    <span class="char-count">280/500</span>
-                </div>
+            <div class="row-fluid separator">
+                <div class="separator-end left"></div>
+                <div class="separator-end right"></div>
             </div>
-        </div>
-    </div>
 
 
-    <div class="row-fluid separator">
-        <div class="separator-end left"></div>
-        <div class="separator-end right"></div>
-    </div>
-
-
-    <div class="publish-area">
-        <div class="row-fluid">
-            <div class="span12">
-                <div class="publish-buttons">
-                    <div class="tandc">
-                        <label for="agreetandc">
-                            <input type="checkbox" name="agreetandc" class="checkbox-tandc" />
-                            I promise the money I raise will be used to help my local community.
-                        </label>
+            <div class="publish-area">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="publish-buttons">
+                            <div class="tandc">
+                                <label for="agreetandc">
+                                    <input type="checkbox" name="agreetandc" class="checkbox-tandc" />
+                                    I promise the money I raise will be used to help my local community.
+                                </label>
+                            </div>
+                            <div class="publish"><input type="submit" class="btn-preview enabled" value="Preview your project" /></div>
+                            <div class="publish"><input type="submit" class="btn-publish enabled" value="Publish your project" /></div>
+                        </div>
                     </div>
-                    <div class="publish"><input type="submit" class="btn-preview enabled" value="Preview your project" /></div>
-                    <div class="publish"><input type="submit" class="btn-publish enabled" value="Publish your project" /></div>
                 </div>
             </div>
-        </div>
-    </div>
 
-</form>
+        </form>
+    </div>
+</div>

@@ -1,219 +1,223 @@
-<form method="POST">
+<div class="container">
+    <div class="page-content">
+        <form method="POST">
 
-    <div class="row-fluid">
-        <div class="preview-banner span12">
             <div class="row-fluid">
-                <div class="span6">
-                    <div class="preview-banner-description-area">
-                        <p><strong>This is just a preview of your project.</strong><br />
-                        If you're happy with it, <a href="">publish your project</a></p>
-                    </div>
-                </div>
-                <div class="preview-banner-buttons-area span6">
-                    <p><a href="">Go back</a> to edit your project</p>
-                    <input type="submit" class="btn-publish enabled" value="Publish your project" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="project-summary-area">
-        <img src="static/img/beta.png" width="51" height="51" class="beta-image" alt="beta" />
-        <div class="row-fluid">
-            <div class="span8 project-pitch">
-
-                <h1 class="project-title">We're raising money for Pat's local bike project because we want to do more cycling</h1>
-
-                <div class="project-owner-area">
-                    <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Username" />
-                    <p>Project owner:</p>
-                    <span class="creator-name">Sylvia Smith</span>
-                </div>
-                <div class="social-area">
-                    <img src="static/img/social-share-preview.png" width="346" height="22" alt="Preview social sharing" />
-                </div>
-            </div>
-
-            <div class="span4 dashboard preview">
-
-                <div class="progress-area">
-                    <div id="pie-container">
-                        <span class="chartwell pies">
-                            <span class="total-raised">75</span>
-                            <span class="total-background">25</span>
-                            <span class="pie-centre">D</span>
-                        </span>
-                        <div class="days-left">
-                            <span class="days-left-number">15</span><br />days left
-                        </div>
-                    </div>
-                </div>
-
-                <div class="amounts-area">
-                    <div class="amount-raised">
-                        <span class="amounts-label">Raised so far</span>
-                        <span class="amounts-value">&pound;750.00</span>
-                    </div>
-                    <div class="target">
-                        <span class="amounts-label">Target</span>
-                        <span class="amounts-value">&pound;1000.00</span>
-                    </div>
-                </div>
-
-                <div class="donate-area">
-                    <a href="/donation/direct/charity/190017?causeId=1876690" class="btn-donate">Donate</a>
-                    <a href="" class="remind-link">Remind me to donate later</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="hero-image-area">
-        <div class="row-fluid">
-            <div class="span6" style="display: table">
-                <div class="photo-frame">
-                    <div class="photo-frame-inner">
-                        <img src="static/img/community-garden-photo-large.jpg" width="382" height="255" alt="user photo - dynamic text needed?" />
-                    </div>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="map-frame">
-                    <div id="map-canvas"></div>
-                </div>
-                <div id="location">9 Stavordale Road, London, United Kingdom</div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row-fluid separator">
-        <div class="separator-end left"></div>
-        <div class="separator-end right"></div>
-    </div>
-
-
-    <div class="project-details-area">
-        <div class="row-fluid">
-            <div class="span6">
-                <div class="donations-updates post-update">
-                    <h2>Donations and comments</h2>
-
-                    <h3>Post an update on your project</h3>
-
-                    <div class="skew-container">
-                        <div class="skew-bg blue"></div>
-                        <div class="row-fluid">
-                            <div class="skew-content">
-                                <textarea class="update-input-skew">Tell your friends and partners something about the project's progress...</textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="update-submit-container green">
-                        <input type="submit" class="update-submit" value="Post" />
-                    </div>
-
-                    <ul class="history">
-                        <li class="pink">
-                            <div class="donation-image">
-                                <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
-                            </div>
-                            <div class="donation-text">
-                                <p>lorum ipsum dolor sit amet oij o asdlkjf ldksjf
-                                Veggies sunt bona vobis, proinde vos postulo esse magis melon fennel scallion shallot arugula chickweed endive.</p>
-                                <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
-                            </div>
-                            <div class="donation-amount">&pound;10</div>
-                        </li>
-                        <li class="blue">
-                            <div class="donation-image">
-                                <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
-                            </div>
-                            <div class="donation-text">
-                                <p>Okra groundnut winter purslane wakame sorrel okra radish. Soybean kohlrabi bell pepper dulse eggplant okra garbanzo sorrel gumbo parsnip scallion squash kombu. Seakale avocado kombu bitterleaf cucumber taro tomatillo courgette.</p>
-                                <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
-                            </div>
-                            <div class="donation-amount">&pound;25</div>
-                        </li>
-                        <li class="creator-comment">
-                            <div class="donation-text">
-                                <p>3 days left to donate! Thank you for all your kind words</p>
-                                <span class="creator-name">Sylvia Smith</span><span class="donation-date">12/11/2012</span>
-                            </div>
-                            <div class="donation-image">
-                                <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Username" />
-                            </div>
-                        </li>
-                        <li class="grey">
-                            <div class="donation-image">
-                                <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
-                            </div>
-                            <div class="donation-text"><p>lorum ipsum dolor sit amet oij o asdlkjf ldksjf Veggies sunt bona vobis, proinde vos postulo esse magis melon fennel scallion shallot arugula chickweed endive.</p>
-                            <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
-                            </div>
-                            <div class="donation-amount">&pound;10</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="project-story">
-                    <h2>What's the problem we're trying to solve?</h2>
-                    <p>
-                        Paddington Children's Playgroup has used the same rooms in Paddington Community Hall for 7 years and never painted the rooms...
-                        <a href="">Continue Reading</a>
-                    </p>
-                    <h2>How will the money be spent?</h2>
-                    <p>
-                        We want to buy paint, curtains (and liners) and some new crash mats, plus some table cloths and cushion fabric...
-                        <a href="">Continue Reading</a>
-                    </p>
-                    <h2>When will we see the difference?</h2>
-                    <p>
-                        We think that after funding has closed, eager parents could have the project completed within 5 weeks - in time for the new term, ...
-                        <a href="">Continue Reading</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="separator">
-        <div class="separator-end left"></div>
-        <div class="separator-end right"></div>
-    </div>
-
-    <div class="creator-area">
-        <div class="row-fluid">
-            <div class="span6">
-                <h2>About me</h2>
-                <div class="blue">
+                <div class="preview-banner span12">
                     <div class="row-fluid">
-                        <div class="about-me-module span12">
-                           <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Sylvia Smith" />
-                            <h3>Sylvia Smith</h3>
-                            <p>I live and work in London. Lorem ipsum porta venenatis turpis sit amet gravida. Praesent condimentum, neque et scelerisque euismod.</p>
-                            <a href="" class="btn-contact">Contact me</a>
-                            <p class="static-text">Feel free to drop me an email to find out more about my project</p>
+                        <div class="span6">
+                            <div class="preview-banner-description-area">
+                                <p><strong>This is just a preview of your project.</strong><br />
+                                If you're happy with it, <a href="">publish your project</a></p>
+                            </div>
+                        </div>
+                        <div class="preview-banner-buttons-area span6">
+                            <p><a href="">Go back</a> to edit your project</p>
+                            <input type="submit" class="btn-publish enabled" value="Publish your project" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="span6">
-                <h2>Have your say</h2>
+
+
+            <div class="project-summary-area">
+                <img src="static/img/beta.png" width="51" height="51" class="beta-image" alt="beta" />
                 <div class="row-fluid">
-                    <div class="have-your-say span12">
-                        <div id="fb-root"></div>
-                        <div class="fb-comments" data-href="<%= request.url %>" data-num-posts="3" data-width="550"></div>
+                    <div class="span8 project-pitch">
+
+                        <h1 class="project-title">We're raising money for Pat's local bike project because we want to do more cycling</h1>
+
+                        <div class="project-owner-area">
+                            <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Username" />
+                            <p>Project owner:</p>
+                            <span class="creator-name">Sylvia Smith</span>
+                        </div>
+                        <div class="social-area">
+                            <img src="static/img/social-share-preview.png" width="346" height="22" alt="Preview social sharing" />
+                        </div>
+                    </div>
+
+                    <div class="span4 dashboard preview">
+
+                        <div class="progress-area">
+                            <div id="pie-container">
+                                <span class="chartwell pies">
+                                    <span class="total-raised">75</span>
+                                    <span class="total-background">25</span>
+                                    <span class="pie-centre">D</span>
+                                </span>
+                                <div class="days-left">
+                                    <span class="days-left-number">15</span><br />days left
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="amounts-area">
+                            <div class="amount-raised">
+                                <span class="amounts-label">Raised so far</span>
+                                <span class="amounts-value">&pound;750.00</span>
+                            </div>
+                            <div class="target">
+                                <span class="amounts-label">Target</span>
+                                <span class="amounts-value">&pound;1000.00</span>
+                            </div>
+                        </div>
+
+                        <div class="donate-area">
+                            <a href="/donation/direct/charity/190017?causeId=1876690" class="btn-donate">Donate</a>
+                            <a href="" class="remind-link">Remind me to donate later</a>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
-</form>
+
+            <div class="hero-image-area">
+                <div class="row-fluid">
+                    <div class="span6" style="display: table">
+                        <div class="photo-frame">
+                            <div class="photo-frame-inner">
+                                <img src="static/img/community-garden-photo-large.jpg" width="382" height="255" alt="user photo - dynamic text needed?" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="map-frame">
+                            <div id="map-canvas"></div>
+                        </div>
+                        <div id="location">9 Stavordale Road, London, United Kingdom</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row-fluid separator">
+                <div class="separator-end left"></div>
+                <div class="separator-end right"></div>
+            </div>
+
+
+            <div class="project-details-area">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <div class="donations-updates post-update">
+                            <h2>Donations and comments</h2>
+
+                            <h3>Post an update on your project</h3>
+
+                            <div class="skew-container">
+                                <div class="skew-bg blue"></div>
+                                <div class="row-fluid">
+                                    <div class="skew-content">
+                                        <textarea class="update-input-skew">Tell your friends and partners something about the project's progress...</textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="update-submit-container green">
+                                <input type="submit" class="update-submit" value="Post" />
+                            </div>
+
+                            <ul class="history">
+                                <li class="pink">
+                                    <div class="donation-image">
+                                        <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
+                                    </div>
+                                    <div class="donation-text">
+                                        <p>lorum ipsum dolor sit amet oij o asdlkjf ldksjf
+                                        Veggies sunt bona vobis, proinde vos postulo esse magis melon fennel scallion shallot arugula chickweed endive.</p>
+                                        <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
+                                    </div>
+                                    <div class="donation-amount">&pound;10</div>
+                                </li>
+                                <li class="blue">
+                                    <div class="donation-image">
+                                        <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
+                                    </div>
+                                    <div class="donation-text">
+                                        <p>Okra groundnut winter purslane wakame sorrel okra radish. Soybean kohlrabi bell pepper dulse eggplant okra garbanzo sorrel gumbo parsnip scallion squash kombu. Seakale avocado kombu bitterleaf cucumber taro tomatillo courgette.</p>
+                                        <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
+                                    </div>
+                                    <div class="donation-amount">&pound;25</div>
+                                </li>
+                                <li class="creator-comment">
+                                    <div class="donation-text">
+                                        <p>3 days left to donate! Thank you for all your kind words</p>
+                                        <span class="creator-name">Sylvia Smith</span><span class="donation-date">12/11/2012</span>
+                                    </div>
+                                    <div class="donation-image">
+                                        <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Username" />
+                                    </div>
+                                </li>
+                                <li class="grey">
+                                    <div class="donation-image">
+                                        <img src="static/img/avatar-donor-green.png" width="50" height="50" alt="Username" />
+                                    </div>
+                                    <div class="donation-text"><p>lorum ipsum dolor sit amet oij o asdlkjf ldksjf Veggies sunt bona vobis, proinde vos postulo esse magis melon fennel scallion shallot arugula chickweed endive.</p>
+                                    <span class="donor-name">Joe Bloggs</span><span class="donation-date">12/11/2012</span>
+                                    </div>
+                                    <div class="donation-amount">&pound;10</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="project-story">
+                            <h2>What's the problem we're trying to solve?</h2>
+                            <p>
+                                Paddington Children's Playgroup has used the same rooms in Paddington Community Hall for 7 years and never painted the rooms...
+                                <a href="">Continue Reading</a>
+                            </p>
+                            <h2>How will the money be spent?</h2>
+                            <p>
+                                We want to buy paint, curtains (and liners) and some new crash mats, plus some table cloths and cushion fabric...
+                                <a href="">Continue Reading</a>
+                            </p>
+                            <h2>When will we see the difference?</h2>
+                            <p>
+                                We think that after funding has closed, eager parents could have the project completed within 5 weeks - in time for the new term, ...
+                                <a href="">Continue Reading</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator">
+                <div class="separator-end left"></div>
+                <div class="separator-end right"></div>
+            </div>
+
+            <div class="creator-area">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h2>About me</h2>
+                        <div class="blue">
+                            <div class="row-fluid">
+                                <div class="about-me-module span12">
+                                   <img src="static/img/avatar-creator-pink.png" width="50" height="50" alt="Sylvia Smith" />
+                                    <h3>Sylvia Smith</h3>
+                                    <p>I live and work in London. Lorem ipsum porta venenatis turpis sit amet gravida. Praesent condimentum, neque et scelerisque euismod.</p>
+                                    <a href="" class="btn-contact">Contact me</a>
+                                    <p class="static-text">Feel free to drop me an email to find out more about my project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <h2>Have your say</h2>
+                        <div class="row-fluid">
+                            <div class="have-your-say span12">
+                                <div id="fb-root"></div>
+                                <div class="fb-comments" data-href="<%= request.url %>" data-num-posts="3" data-width="550"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

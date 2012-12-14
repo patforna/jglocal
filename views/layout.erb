@@ -41,82 +41,6 @@
         </div>
     </nav>
 
-    <div class="status-panel">
-        <div class="container">
-            <div class="status-panel-inner">
-                <div class="row-fluid">
-                    <div class="span5">
-                        <div class="status-addupdate">
-                            <h2>Send donors a project update?</h2>
-                            <a href="" class="button_status-addupdate">Add a project update</a>
-                        </div>
-
-                        <h3>Update your project status?</h3>
-                        <p>Your page is now active. Keep donors and prospective donors informed of project developments by posting project updates that will be emailed to your donors.</p>
-                        <ul class="status-indicator">
-                            <li class="complete">Fundraising page is active</li>
-                            <li class="ticked">
-                                Funded and ready for doing
-                                <button type="button" class="button-status-incomplete">Project is 'Being done'</button>
-                            </li>
-                            <li>
-                                Being done
-                                <button type="button" class="button-status-incomplete">Project is 'Complete'</button>
-                            </li>
-                            <li>
-                                Completed
-                                <button type="button" class="button-status-incomplete">Create final report</button>
-                            </li>
-                        </ul>
-                    </div>
-<!--
-                    <div class="span7">
-                        <div class="status-thankyou">
-                            <h2>Edit our thank you message?</h2>
-                            <div class="status-thankyou-inner-l">
-                                 <textarea class="status-thankyou-input span12"></textarea>
-                            </div>
-                            <div class="status-thankyou-inner-r">
-                                <button type="button" class="button-status-update">Update</button>
-                            </div>
-                        </div>
-                    </div>
--->
-
-                    <div class="span7">
-                        <div class="status-photo">
-                            <h2>When you've completed your project</h2>
-                            <div class="status-photo-inner-l">
-                                <div class="photo-upload-info">
-                                    <div class="photo-upload-info-inner">
-                                        We request you upload a relevant final picture of the finished project and a couple of sentences about how the money was spent.
-                                        This final report will be sent to your donors.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="status-photo-inner-r">
-                                <button type="button" class="button-status-upload">Upload your picture</button>
-                            </div>
-                        </div>
-                        <div class="status-money-spent">
-                            <h2>How the money was spent</h2>
-                            <div class="status-money-spent-inner-l">
-                                <textarea class="status-money-spent-input span12"></textarea>
-                            </div>
-                            <div class="status-money-spent-inner-r">
-                                <button type="button" class="button-status-final-report">Create final report</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="page-content">
         <%= yield %>
             <!-- Start JustGiving footer -->
             <footer>
@@ -170,8 +94,6 @@
             </footer>
             <!-- End JustGiving footer -->
 
-        </div>
-    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
     <script src="static/js/vendor/bootstrap.min.js"></script>

@@ -189,6 +189,7 @@ h3 {
     margin: 10px 0 10px 0!important;
 /*    display: inline-block;
     overflow:  hidden; */
+    display: table-cell;
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
@@ -215,7 +216,7 @@ h3 {
 .map-frame {
     padding: 12px 15px;
     background: #fff;
-    margin: 1px 0 10px 0!important;
+    margin: 10px 0 10px 0!important;
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
@@ -323,7 +324,7 @@ h3 {
     cursor: auto!important;
 }
 
-.donations-updates ul.history {
+.donations-updates ul.history, ul.timeline {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -338,6 +339,65 @@ h3 {
     -moz-border-radius: 25px 10px / 10px 25px;
     border-radius: 4px 2px / 10px 25px;
     width: 100%;
+}
+
+.timeline-container {
+    background: #fff!important;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    width: 100%;
+    margin-bottom: 10px;
+    -moz-border-radius: 25px 10px / 10px 25px;
+    border-radius: 4px 2px / 10px 25px;
+}
+
+.timeline-arrow {
+    position: absolute;
+    width: 42px;
+    height: 25px;
+
+}
+
+ul.timeline li {
+    width: 50%;
+/*    border:  1px solid #f0f; */
+    clear: left;
+    float: left;
+    display: inline-block;
+    margin:  0;
+}
+
+ul.timeline li:nth-of-type(odd) .timeline-arrow {
+    background: /*#ff0000*/ url(/local/static/img/timeline-arrow-right.png) no-repeat right 5px;
+    top: 10px;
+    right: 0px;
+    margin: 0 -32px 0 0;
+}
+
+ul.timeline li:nth-of-type(even) {
+    float: right;
+    clear: right;
+}
+
+ul.timeline li:nth-of-type(even) .timeline-arrow {
+    background: url(/local/static/img/timeline-arrow-left.png) no-repeat left 5px;
+    top: 10px;
+    left: 0px;
+    margin: 0 0 0 -32px;
+}
+
+ul.timeline li:nth-of-type(2) {
+    margin: 50px 0 10px 0;
+}
+
+
+ul.timeline li:nth-of-type(odd) .timeline-container-outer {
+    margin-right: 24px;
+}
+
+ul.timeline li:nth-of-type(even) .timeline-container-outer {
+    margin-left: 25px;
 }
 
 .blue {
@@ -1136,17 +1196,55 @@ textarea {
     width: 100%;
 }
 
-a.button_status-addupdate, .button-status-incomplete, .button-status-update, .button-status-upload, .button-status-final-report {
+.button-status, a.button_status-addupdate, .button-status-update, .button-status-upload, .button-status-final-report {
     color: #fff;
     font-size: 11px;
     border: none;
     width: 134px;
     height: 28px;
+    float: right;
+    clear: none;
+    background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat;
+}
+
+.button-status.enabled {
+    background: url(/local/static/img/btn-blue-bg.png) no-repeat;
+}
+
+.button-status-update {
+    margin: 194px 0 0 10px;
+    background: url(/local/static/img/btn-green-bg-inactive.png) no-repeat;
+    width: 82px;
+    height: 28px;
+    float: left;
+}
+
+.button-status-update.enabled {
+    background: url(/local/static/img/btn-green-bg.png) no-repeat;
+}
+
+.button-status-upload {
+    margin: 32px 0 0 10px;
+    background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
+    float: left;
+}
+
+.button-status-upload.enabled {
+    background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
+}
+
+.button-status-final-report {
+    margin: 82px 0 0 10px;
+    float: left;
+}
+
+.button-status-final-report.enabled {
+    background: url(/local/static/img/btn-blue-bg.png) no-repeat;
 }
 
 a.button_status-addupdate {
     background: #5ca2d3;
-    background: url(/local/static/img/btn-blue-bg.png) no-repeat left;
+    background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat left;
     display: inline-block;
     overflow: visible;
     text-align: center;
@@ -1157,45 +1255,12 @@ a.button_status-addupdate {
     text-decoration: none;
 }
 
-.button-status-incomplete {
-    background: #97bddc;
-    float: right;
-    background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat;
-}
-
 .status-thankyou-input {
     height: 222px;
 }
 
 .status-money-spent-input {
     height: 110px;
-}
-
-.button-status-update {
-    margin: 194px 0 0 10px;
-    background: url(/local/static/img/btn-green-bg.png) no-repeat;
-    width: 82px;
-    height: 28px;
-    float: left;
-    clear: none;
-}
-
-.button-status-upload {
-    margin: 32px 0 0 10px;
-    background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
-    width: 134px;
-    height: 28px;
-    float: left;
-    clear: none;
-}
-
-.button-status-final-report {
-    margin: 82px 0 0 10px;
-    background: url(/local/static/img/btn-blue-bg.png) no-repeat;
-    width: 134px;
-    height: 28px;
-    float: left;
-    clear: none;
 }
 
 .status-panel h2 {
