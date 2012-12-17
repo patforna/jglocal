@@ -508,7 +508,7 @@ ul.timeline li:nth-of-type(even) .timeline-container-outer {
     margin-top: 25px;
 }
 
-.preview {
+.form-disabled {
     opacity: 0.6;
 }
 
