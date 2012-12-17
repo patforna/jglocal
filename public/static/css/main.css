@@ -1196,7 +1196,7 @@ textarea {
     width: 100%;
 }
 
-.button-status, a.button_status-addupdate, .button-status-update, .button-status-upload, .button-status-final-report {
+.button-status, a.button-status-addupdate, .button-status-update, .button-status-upload, .button-status-final-report {
     color: #fff;
     font-size: 11px;
     border: none;
@@ -1205,6 +1205,10 @@ textarea {
     float: right;
     clear: none;
     background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat;
+}
+
+.button-status.disabled {
+    cursor:auto;
 }
 
 .button-status.enabled {
@@ -1223,6 +1227,10 @@ textarea {
     background: url(/local/static/img/btn-green-bg.png) no-repeat;
 }
 
+.button-status-update.disabled {
+    cursor: auto;
+}
+
 .button-status-upload {
     margin: 32px 0 0 10px;
     background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
@@ -1231,6 +1239,10 @@ textarea {
 
 .button-status-upload.enabled {
     background: url(/local/static/img/btn-magenta-bg.png) no-repeat;
+}
+
+.button-status-upload.disabled {
+    cursor: auto;
 }
 
 .button-status-final-report {
@@ -1242,9 +1254,12 @@ textarea {
     background: url(/local/static/img/btn-blue-bg.png) no-repeat;
 }
 
-a.button_status-addupdate {
+.button-status-final-report.disabled {
+    cursor: auto;
+}
+a.button-status-addupdate {
     background: #5ca2d3;
-    background: url(/local/static/img/btn-blue-bg-inactive.png) no-repeat left;
+    background: url(/local/static/img/btn-blue-bg.png) no-repeat left;
     display: inline-block;
     overflow: visible;
     text-align: center;
