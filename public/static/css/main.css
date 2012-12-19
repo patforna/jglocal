@@ -86,6 +86,31 @@ h3 {
     background: #e2e0da;
 }
 
+.proj-complete-top-area {
+    padding: 20px 20px 15px 20px;
+    background: url(/local/static/img/bg-transparent-proj-complete-93.png);
+    margin: 0;
+    border-bottom: 1px solid #e0e0de;
+    position: relative;
+}
+
+.proj-complete-lower-area {
+    padding: 0 20px 0 20px;
+/*    background: #dadbd6; */
+    background: #dadbd6 url(/local/static/img/timeline-bg.png) repeat-y top;
+    margin: 0;
+    border-top: 1px solid #b3aca6;
+    position: relative;
+}
+
+.proj-complete-footer-area {
+    padding: 0 20px 28px 20px;
+/*    background: #dadbd6; */
+    background: #dadbd6 url(/local/static/img/timeline-end-bg.png) no-repeat top;
+    margin: 0;
+    position: relative;
+}
+
 
 /*** module container divs ***/
 
@@ -324,7 +349,7 @@ h3 {
     cursor: auto!important;
 }
 
-.donations-updates ul.history, ul.timeline {
+.donations-updates ul.history {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -347,7 +372,7 @@ h3 {
     display: inline-block;
     overflow: visible;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     -moz-border-radius: 25px 10px / 10px 25px;
     border-radius: 4px 2px / 10px 25px;
 }
@@ -359,13 +384,27 @@ h3 {
 
 }
 
+ul.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+/*    overflow: hidden; */
+
+/*    background: url(/local/static/img/timeline-bg.png) repeat-y top; */
+
+}
+
+
 ul.timeline li {
     width: 50%;
 /*    border:  1px solid #f0f; */
     clear: left;
     float: left;
-    display: inline-block;
+/*    display: inline-block; */
     margin:  0;
+    padding: 0;
 }
 
 ul.timeline li:nth-of-type(odd) .timeline-arrow {
@@ -387,18 +426,35 @@ ul.timeline li:nth-of-type(even) .timeline-arrow {
     margin: 0 0 0 -32px;
 }
 
-ul.timeline li:nth-of-type(2) {
-    margin: 50px 0 10px 0;
+ul.timeline li:nth-of-type(3) {
+    margin: 20px 0 10px 0;
 }
-
 
 ul.timeline li:nth-of-type(odd) .timeline-container-outer {
     margin-right: 24px;
 }
+/*
+ul.timeline li:nth-of-type(odd) .timestamp {
+    margin-right: 24px;
+}
+*/
 
 ul.timeline li:nth-of-type(even) .timeline-container-outer {
-    margin-left: 25px;
+    margin-left: 24px;
 }
+
+/*
+ul.timeline li:nth-of-type(even) .timestamp {
+    margin-left: 24px;
+}
+*/
+
+.timeline li .timestamp {
+    border-bottom:  1px solid #d5d5d3;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 
 .blue {
     color: #5ca2d3;
@@ -441,7 +497,7 @@ ul.timeline li:nth-of-type(even) .timeline-container-outer {
 }
 
 .donation-image img {
-    padding: 15px 0 0 15px;
+    padding: 15px 0 15px 15px;
 }
 
 .donation-text {
@@ -1369,6 +1425,94 @@ a.button-status-addupdate {
     font-size: 11px;
     line-height: 1.0;
 }
+
+
+/*** Project completion page ***/
+
+h1.proj-complete-header {
+    font-weight: normal;
+    font-size: 32px;
+    display: inline-block;
+    line-height: 1.175;
+    margin: 0 0 20px 0;
+}
+
+.proj-complete-photo-caption {
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 15px 15px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.proj-complete-report {
+/*    border:  1px solid #f00; */
+    margin-bottom: 10px;
+/*    display: inline-block;
+    overflow: hidden; */
+}
+
+.proj-complete-report h2 {}
+.proj-complete-report p {
+    clear: none;
+    display: inline;
+}
+.proj-complete-report a {}
+
+.timestamp {
+    border-bottom: 1px solid #a59c95;
+    color: #a49b94;
+    font-size: 12px;
+    padding: 0 0 3px 0;
+    margin-bottom: 14px;
+}
+
+.proj-complete-tell-friends {
+/*    border:  1px solid #0f0; */
+    margin-bottom: 20px;
+/*
+    display: inline-block;
+    overflow: hidden;
+*/
+}
+
+.proj-complete-tell-friends h2 {}
+
+a.why-we-started {
+    color: #4b4841;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 1.0;
+    padding: 0 20px 0 0;
+    margin: 0;
+    background: url(/local/static/img/why-we-started-link-bg.png) no-repeat right;
+}
+
+a.how-we-did-it {
+    color: #4b4841;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+}
+
+h2.complete-story {
+    padding: 6px 0 7px 35px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.timeline-ribbon {
+    position: absolute;
+    top: -2px;
+    left: 20px;
+}
+
+
+
+
 
 /*** Form inputs ***/
 
