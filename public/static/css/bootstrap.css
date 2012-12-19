@@ -199,7 +199,7 @@ a:hover {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 980px; /*** ***/
 }
 .span12 {
   width: 940px;
@@ -1729,7 +1729,8 @@ address {
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    /* width: 1170px; */ /*** ***/
+      width: 980px;
   }
   .span12 {
     width: 1170px;
