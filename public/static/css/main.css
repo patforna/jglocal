@@ -1696,12 +1696,28 @@ ul.footer-tab li {
     background: url(/local/static/img/bg-transparent-proj-complete-93.png);
 }
 
-
 .horizontal-border {
     height: 5px;
-    width: 100%;
+    width: 50%;
     background: url(/local/static/img/circle-on-white-half-left-half-right.png) repeat-x left top;
     margin: 0;
+    float: left;
+}
+
+.horizontal-border-torn {
+    background: url(/local/static/img/circle-on-white-torn.png) repeat-x left top;
+    height: 5px;
+    width: 25%;
+    margin: 0;
+    float: left;
+}
+
+.horizontal-border-right {
+    height: 5px;
+    width: 25%;
+    background: url(/local/static/img/circle-on-white-half-left-half-right.png) repeat-x left top;
+    margin: 0;
+    float: left;
 }
 
 .vertical-border {
@@ -1712,12 +1728,6 @@ ul.footer-tab li {
     clear: none;
     display: inline-block;
     overflow: hidden;
-}
-
-.vertical-border-2 {
-    background: url(/local/static/img/circle-on-white-half-left-half-right.png) repeat-y left top;
-    border: 1px solid #0f0;
-    height: 200px;
 }
 
 .footer-tab a.create, .footer-tab a.find {
@@ -1743,9 +1753,12 @@ ul.footer-tab li {
     text-decoration: none;
 }
 
-
-
-
+.tab-spacer {
+    width: 25%;
+    height: 40px;
+    float: right;
+    background: #fff;
+}
 
 /*** Form inputs ***/
 
