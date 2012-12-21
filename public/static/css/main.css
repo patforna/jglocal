@@ -1301,7 +1301,7 @@ textarea {
 }
 
 .button-status-final-report {
-    margin: 82px 0 0 10px;
+    margin: 12px 0 0 0;
     float: left;
 }
 
@@ -1330,7 +1330,8 @@ a.button-status-addupdate {
 }
 
 .status-money-spent-input {
-    height: 110px;
+    height: 210px;
+    width: 445px;
 }
 
 .status-panel h2 {
@@ -1425,6 +1426,67 @@ a.button-status-addupdate {
     line-height: 1.0;
 }
 
+
+/* */
+
+.status-photo-save {
+    background: #fff;
+    margin-top: -50px;
+    padding: 40px 0 20px 0;
+}
+
+#projectStatusPanel .photo-frame-create {
+    margin: 0 0 23px 20px!important;
+    position: relative;
+}
+
+.status-step-indicator {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.tell-supporters {
+    height: 60px;
+}
+
+#projectStatusPanel .photo-frame-create h3 {
+    margin: 0;
+    padding: 15px 0 22px 10px;
+    font-size: 22px;
+    line-height: 1.0;
+    display: inline-block;
+    width: 320px;
+}
+
+.final-report-spacer {
+    background: url(/local/static/img/status-step-icon-2.png) no-repeat left 4px;
+    padding-left: 30px;
+    margin-top: -6px;
+    height: 68px;
+}
+
+.final-report-spacer h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    display: inline-block;
+    width: 270px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.final-report-spacer .help-icon {
+    float: left;
+    margin: 2px 0 0 0;
+}
+
+#projectStatusPanel .photo-frame-create p {
+    margin: 0;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    line-height: 1.2;
+}
 
 /*** Project completion page ***/
 

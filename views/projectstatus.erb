@@ -1,62 +1,78 @@
-<div class="status-panel">
+<div id="projectStatusPanel" class="status-panel">
     <div class="container">
         <div class="status-panel-inner">
             <div class="row-fluid">
                 <div class="span5">
                     <div class="status-addupdate">
-                        <h2>Send donors a project update?</h2>
-                        <a href="" class="button-status-addupdate">Add a project update</a>
+                        <h2>Post a project update:</h2>
+                        <a href="#donationsAndUpdatesSection" class="button-status-addupdate">Add a project update</a>
                     </div>
-
-                    <h3>Update your project status?</h3>
-                    <p>Your page is now active. Keep donors and prospective donors informed of project developments by posting project updates that will be emailed to your donors.</p>
+                    <h3>Create a final report</h3>
+                    <p>Now that your project is complete, let your supporters know. Please provide a picture of the completed project and a couple of short sentences about how the project went. This will create a final report that we'll send to all your donors.</p>
                     <ul class="status-indicator">
-                        <li class="complete">Fundraising page is active</li>
-                        <li class="ticked">
-                            Funded and ready for doing
-                            <button type="button" class="button-status enabled">Project is 'Being done'</button>
-                        </li>
-                        <li>
-                            Being done
-                            <button type="button" class="button-status">Project is 'Complete'</button>
-                        </li>
-                        <li>
-                            Completed
-                            <button type="button" class="button-status">Create final report</button>
-                        </li>
+                        <li class="ticked">Project page is active</li>
+                        <li class="ticked">Funded and ready to start</li>
+                        <li class="ticked">Project started</li>
+                        <li class="complete">Complete</li>
                     </ul>
                 </div>
-
-                <div class="span7">
-                    <div class="status-photo">
-                        <h2>When you've completed your project</h2>
-                        <div class="status-photo-inner-l">
-                            <div class="photo-upload-info">
-                                <div class="photo-upload-info-inner">
-                                    We request you upload a relevant final picture of the finished project and a couple of sentences about how the money was spent.
-                                    This final report will be sent to your donors.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="status-photo-inner-r">
-                            <button type="button" class="button-status-upload">Upload your picture</button>
-                        </div>
-                    </div>
-                    <div class="status-money-spent">
-                        <h2>How the money was spent</h2>
-                        <div class="status-money-spent-inner-l">
-                            <textarea class="status-money-spent-input span12"></textarea>
-                        </div>
-                        <div class="status-money-spent-inner-r">
-                            <button type="button" class="button-status-final-report enabled">Create final report</button>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="span7"></div>
             </div>
         </div>
     </div>
+
+    <div class="container status-photo-save">
+        <form method="POST" action="/local/project/jilltest/generate-final-report">
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="photo-frame-create">
+                        <div class="photo-frame-create-inner">
+                            <div class="photo-upload-outer">
+                                <div id="photo-upload-copy">
+                                    <h3>Upload a picture of the finished project</h3>
+                                    <p>Please upload a picture of your finished project to appear in your timeline. Show your donors the difference they&#39;ve made.</p>
+                                </div>
+                                <img src="/local/static/img/ajax-loader-24x24.gif" style="display: none"/>
+                                <input class="image-input-box" id="CompletionImageUrl" name="CompletionImageUrl" type="hidden" value="" />
+                            </div>
+                        </div>
+                        <img width="24" height="23" class="status-step-indicator" src="static/img/status-step-icon-1.png">
+                    </div>
+                    <div class="photo-upload-container">
+                        <input type="file" id="projectImage" name="fileData" />
+                        <button class="photo-upload">Upload picture</button>
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="final-report-spacer">
+                        <h2>Tell supporters about the finished project</h2>
+                        <a href=""><img width="24" height="23" class="help-icon" src="static/img/help-icon-status.png"></a>
+                    </div>
+                    <textarea class="status-money-spent-input" cols="20" id="FinalReportText" name="FinalReportText" placeholder="It&#39;s been an amazing few weeks. As soon as you raised our target, we got straight to work. We were blown away by the amount of volunteers we had from the community. With their help, we were able to finish the project in half the time - the community centre is already up and running again. Thanks so much to everyone who donated or supported this project." rows="2">
+        </textarea>
+                    <input type="submit" class="button-status-final-report enabled" value="Create final report" />
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+
+
+
 </div>
+
+
+
+
+
 
 
 <div class="container">

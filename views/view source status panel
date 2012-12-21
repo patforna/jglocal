@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html class="no-js" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <!-- PAT -->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="ga-account" content="UA-8372233-1" />
+        <meta name="base-url" content="/local/" />
+        <title>JustGiving|Local|Jill raising money for to fix css</title>
+
+        <link href="/local/static/css/bootstrap-patched-0.1.css" rel="stylesheet"/>
+<link href="/local/static/css/main.css" rel="stylesheet"/>
+
+        <script src="/local/static/js/vendor/jquery-1.8.2.min.js"></script>
+<script src="/local/static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+<script src="/local/static/js/vendor/analytics.js"></script>
+
+
+
+    <meta name="page-short-name" content="jilltest" />
+    <meta property="fb:app_id" content="125980610784627" />
+    <meta property="og:title" content="We&#39;re raising money for to fix css because we want a gorgeous site" />
+<meta property="og:image" content="https://www.local.justgiving.com/Utils/imaging.ashx?width=300&amp;height=200&amp;imageType=projectphoto&amp;img=122012%5cf9271f34-afb9-4ad2-80a1-7d3fbe003578.jpg" />
+<meta property="og:type" content="cause" />
+<meta property="og:url" content="https://www.local.justgiving.com/local/project/jilltest" />
+<meta property="og:description" content="Jill is raising money for a local cause on JustGiving" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@justgiving" />
+
+
+    </head>
+    <body>
+
+
+<nav>
+    <div class="container">
+        <div class="nav-inner">
+            <img src="/local/static/img/justgiving-text.png" width="149" height="27" alt="JustGiving" />
+            <div class="login-area">
+                Hello <strong>Jill</strong> (not you? <a href='/logout?returnUrl=/local/project/jilltest'>Log out</a>)
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+    <div id="projectStatusPanel" class="status-panel" style="display: none">
+        <div class="container">
+            <div class="status-panel-inner">
+                <div class="row-fluid">
+                    <div class="span5">
+                        <div class="status-addupdate">
+                            <h2>Post a project update:</h2>
+                            <a href="#donationsAndUpdatesSection" class="button-status-addupdate">Add a project update</a>
+                        </div>
+                        <h3>Create a final report</h3>
+                        <p>Now that your project is complete, let your supporters know. Please provide a picture of the completed project and a couple of short sentences about how the project went. This will create a final report that we'll send to all your donors.</p>
+                        <ul class="status-indicator">
+                            <li class="ticked">Project page is active</li>
+                            <li class="ticked">Funded and ready to start</li>
+                            <li class="ticked">Project started</li>
+                            <li class="complete">Complete</li>
+                        </ul>
+                    </div>
+
+
+                    <form method="POST" action="/local/project/jilltest/generate-final-report">
+                        <div class="span7">
+                            <div class="span6">
+                                <div class="photo-frame-create">
+                                    <div class="photo-frame-create-inner">
+                                        <div class="photo-upload-outer">
+                                            <div id="photo-upload-copy">
+                                                <h3>Upload a picture of the finished project</h3>
+                                                <p>Please upload a picture of your finished project to appear in your timeline. Show your donors the difference they&#39;ve made.</p>
+                                            </div>
+                                            <img src="/local/static/img/ajax-loader-24x24.gif" style="display: none"/>
+                                            <input class="image-input-box" id="CompletionImageUrl" name="CompletionImageUrl" type="hidden" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="photo-upload-container">
+                                        <input type="file" id="projectImage" name="fileData" />
+                                        <button class="photo-upload">Upload picture</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="status-money-spent">
+                                <h2>Tell supporters about the finished project</h2>
+                                <div class="status-money-spent-inner-l">
+                                    <textarea class="status-money-spent-input span12" cols="20" id="FinalReportText" name="FinalReportText" placeholder="It&#39;s been an amazing few weeks. As soon as you raised our target, we got straight to work. We were blown away by the amount of volunteers we had from the community. With their help, we were able to finish the project in half the time - the community centre is already up and running again. Thanks so much to everyone who donated or supported this project." rows="2">
+                    </textarea>
+                                </div>
+                                <div class="status-money-spent-inner-r">
+                                    <input type="submit" class="button-status-final-report enabled" value="Create final report" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="page-content">
+        <div class="project-summary-area">
+            <img src="/local/static/img/beta.png" width="51" height="51" class="beta-image" alt="beta" />
+            <div class="row-fluid">
+                <div class="span6 project-pitch">
+                    <h1 class="project-title">We're raising £500.00 to to fix css because we want a gorgeous site</h1>
+                    <div class="project-owner-area">
+                        <img src="/local/static/img/avatar-creator-pink.png" width="50" height="50" alt="Username" />
+                        <p>Project owner:</p>
+                        <span class="creator-name">Jill</span>
+                    </div>
+<div class="social-area">
+    <ul>
+        <li>
+
+<div id="fb-root"></div>
+<fb:like ref="projectpage" data-send="false" data-layout="button_count" data-show-faces="false"></fb:like>
+<script type="text/javascript">
+    try {
+        window.fbAsyncInit = function () {
+            FB.init({ appId: '125980610784627', status: true, cookie: true, xfbml: true, oauth: true });
+
+            FB.Event.subscribe('edge.create', function (href) {
+                JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Facebook', socialAction: 'Like' });
+                JustGiving.Analytics.SocialTracking.Track();
+            });
+            FB.Event.subscribe('edge.remove', function (href) {
+                JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Facebook', socialAction: 'UnLike' });
+                JustGiving.Analytics.SocialTracking.Track();
+            });
+
+
+            (function (namespace) {
+                namespace.AppNamespace = 'jgdonationtest';
+                namespace.AppId = '125980610784627';
+            })(JustGiving.Facebook = JustGiving.Facebook || {});
+
+            $(document).trigger("facebookReady");
+        };
+        (function () {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        } ());
+    }
+    catch (err) {}
+</script></li>
+        <li>
+    <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://www.local.justgiving.com/local/project/jilltest?utm_source=Twitter&amp;utm_medium=projectpage&amp;utm_content=jilltest&amp;utm_campaign=projectpage-tweet"
+      data-count="horizontal" data-text="Join me and help raise &#163;500.00 for to fix css on #justgiving"
+      data-related="justgiving:JustGiving Twitter account" >
+      Tweet
+    </a>
+  <script type="text/javascript">
+      function tweetIntentToAnalytics(intent_event) {
+          if (intent_event) {
+              JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Twitter', socialAction: 'Tweet' });
+              JustGiving.Analytics.SocialTracking.Track();
+          }
+      }
+      // load twitter js asynchronously
+      $(function () {
+          window.twttr = (function (d, s, id) {
+              var t, js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return window.twttr; js = d.createElement(s); js.id = id;
+              js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+              return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+          }(document, "script", "twitter-wjs"));
+          twttr.ready(function (twttr) {
+              twttr.events.bind('tweet', function () { });
+              twttr.events.unbind('tweet');
+              twttr.events.bind('tweet', tweetIntentToAnalytics);
+          });
+      });
+  </script>
+</li>
+        <li>
+<script type="text/javascript">
+    $(function() {
+        $.getScript("//platform.linkedin.com/in.js?async=true", function () {
+            IN.init();
+        });
+    });
+
+    function linkedInSuccessAnalyticsPush() {
+        JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'LinkedIn', socialAction: 'Share' });
+        JustGiving.Analytics.SocialTracking.Track();
+    }
+
+    function linkedInFailureAnalyticsPush() {
+        JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'LinkedIn', socialAction: 'ShareFail' });
+        JustGiving.Analytics.SocialTracking.Track();
+    }
+</script>
+<script type="IN/Share" data-url="https://www.local.justgiving.com/local/project/jilltest?utm_source=LinkedIn&amp;utm_medium=projectpage&amp;utm_content=jilltest&amp;utm_campaign=projectpage-linkedin" data-counter="horizontal" data-onSuccess="linkedInSuccessAnalyticsPush" data-onError="linkedInFailureAnalyticsPush"></script></li>
+        <li><div class="g-plusone" data-size="medium" data-annotation="none" data-href="https://www.local.justgiving.com/local/project/jilltest?utm_source=GooglePlus&utm_medium=projectpage&utm_content=jilltest&utm_campaign=projectpage-googleplus"></div>
+<!-- Google +1 button script -->
+<script type="text/javascript">
+    (function () {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+</script>
+</li>
+        <li class="share-this">
+
+<span class="st_email_button" displayText="Email" st_url="https://www.local.justgiving.com/local/project/jilltest?utm_source=Sharethis&utm_medium=projectpage&utm_content=jilltest&utm_campaign=projectpage-email" st_title="We're raising money for to fix css because we want a gorgeous site" ></span>
+
+<script type="text/javascript">
+    var switchTo5x = false;
+    var __st_loadLate = true;
+</script>
+<script type="text/javascript" src="//ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">    stLight.options({ publisher: '10dd4b0e-da84-439d-a6ac-f1c9f07883f2', publisherGA: 'UA-8372233-1', onhover: false });</script>
+</li>
+    </ul>
+</div>
+                </div>
+
+                <div class="span4 dashboard hidden-phone ">
+                    <div class="progress-area">
+                        <div id="pie-container">
+                            <span class="chartwell pies">
+                                <span class="total-raised">0</span>
+                                <span class="total-background">100</span>
+                                <span class="pie-centre">z</span>
+                            </span>
+                            <div class="days-left">
+                                <span class="days-left-number">30</span><br />
+                                days left
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="amounts-area">
+                        <div class="amount-raised">
+                            <span class="amounts-label">Raised so far</span>
+                            <span class="amounts-value">&pound;0.00</span>
+                        </div>
+                        <div class="target">
+                            <span class="amounts-label">Target</span>
+                            <span class="amounts-value">&pound;500.00</span>
+                        </div>
+                    </div>
+
+                    <div class="donate-area">
+                        <div class="donate-btn-container">
+                            <a href="/donation/direct/charity/228985?causeid=1878742&amp;exitAfterDonorMessage=true&amp;exitUrl=%2flocal%2fproject%2fjilltest" class="btn-donate">Donate</a>
+                        </div>
+                        <a class="remind-link" href="mailto:?Subject=Note to self - support this local project on JustGiving&Body=Remember to support We&#39;re raising money for to fix css because we want a gorgeous site on JustGiving at http%3a%2f%2fwww.justgiving.com%2flocal%2fproject%2fjilltest%3futm_source%3demail%26amp%3butm_medium%3demail-reminder%26amp%3butm_campaign%3djilltest">Remind me to donate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-area">
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="photo-frame-outer">
+                        <div class="photo-frame">
+                            <div class="photo-frame-inner">
+                                <img src="/Utils/imaging.ashx?width=430&amp;height=255&amp;imageType=projectphoto&amp;img=122012%5cf9271f34-afb9-4ad2-80a1-7d3fbe003578.jpg" alt="Project photo"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span6 hidden-phone">
+                    <div class="map-frame">
+                        <div id="map-canvas"></div>
+                    </div>
+                    <div id="location">Holloway Road, London, United Kingdom</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid separator">
+            <div class="separator-end left"></div>
+            <div class="separator-end right"></div>
+        </div>
+
+        <div class="project-details-area">
+            <div class="row-fluid">
+                <div id="activities">
+
+
+<div class="span6">
+    <h2 id="donationsAndUpdatesSection">Donations and updates</h2>
+    <div class="donations-updates">
+            <div class="post-update">
+                <h3>Post an update on your project</h3>
+                <form method="POST" action="/local/project/jilltest/update">
+                    <div class="skew-container">
+                        <div class="skew-bg blue"></div>
+                        <div class="row-fluid">
+                            <div class="skew-content">
+                                <textarea class="update-input-skew" cols="20" id="Message" maxlength="150" name="Message" placeholder="Tell your friends and donors something about the project&#39;s progress..." rows="2">
+</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="update-submit-container green">
+                        <input type="submit" class="update-submit" value="Post" />
+                    </div>
+                </form>
+            </div>
+        <ul class="history">
+        </ul>
+    </div>
+</div>
+
+                </div>
+                <div class="span6">
+    <div class="project-story">
+        <h2>What's the problem we're trying to solve?</h2>
+        <p> Suspendisse hendrerit felis nec lectus suscipit nec scelerisque tortor vestibulum. Praesent feugiat tempor nibh feugiat placerat. In varius tincidunt justo, quis commodo enim luctus eget. Fusce tincidunt vehicula sagittis. Sed luctus pulvinar diam, nec blandit odio ultricies ac. Nullam placerat, sem quis mattis malesuada, nisl metus ultricies leo, sit amet molestie est urna vel sapien. Curabitur tincidunt dui ut nisi ultrices consectetur</p>
+        <h2>Why do we care about this project?</h2>
+        <p>Donec in mi ut tortor tempor rutrum at sit amet erat. Phasellus justo nibh, lobortis eu placerat vitae, tristique non sapien. Pellentesque egestas, risus at consectetur luctus, dolor mi lobortis ligula, ut sollicitudin neque mi non tortor. Duis elementum nisl sit amet libero rhoncus sed interdum ipsum vestibulum. </p>
+        <h2>How will the money be spent?</h2>
+        <p>Suspendisse hendrerit felis nec lectus suscipit nec scelerisque tortor vestibulum. Praesent feugiat tempor nibh feugiat placerat. In varius tincidunt justo, quis commodo enim luctus eget.</p>
+        <h2>When will we see the difference?</h2>
+        <p>Pellentesque at arcu in tortor imperdiet fermentum at tincidunt felis. Vivamus elementum magna vel erat porttitor lacinia. Maecenas metus dolor, semper id placerat mollis, accumsan vitae ante. Aliquam erat volutpat. Aliquam erat volutpat. Nulla suscipit nulla a felis dignissim vel pharetra ante malesuada. Mauris lectus nunc, elementum a condimentum vitae, sodales nec magna. Pellentesque imperdiet lorem ut sem dictum imperdiet pulvinar nunc consectetur. Proin ac velit enim, convallis mattis </p>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="row-fluid separator">
+            <div class="separator-end left"></div>
+            <div class="separator-end right"></div>
+        </div>
+
+        <div class="creator-area">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h2>About me</h2>
+                    <div class="blue">
+                        <div class="row-fluid">
+                            <div class="about-me-module span12">
+                                <img src="/local/static/img/avatar-creator-pink.png" width="50" height="50" alt="Jill" />
+                                <h3>Jill</h3>
+                                <p>Hello world.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa nibh, placerat et sodales nec, varius nec quam. Vestibulum at turpis risus, ac pretium velit. Aenean placerat vehicula pretium. Nunc hendrerit elit vel mi molestie pharetra laoreet tellus posuere.</p>
+                                <a href="mailto:jirving@thoughtworks.com" class="btn-contact">Contact me</a>
+                                <p class="static-text">Feel free to drop me an email to find out more about my project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="span6">
+    <h2>Leave a message of support</h2>
+    <div class="have-your-say">
+            <div class="fb-comments" data-href="https://www.local.justgiving.com/local/project/jilltest" data-num-posts="3" data-width="550" mobile="false"></div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+            <div class="bottom-bar hidden-desktop">
+                <div class="verisign-area"></div>
+
+                <div class="amounts-area">
+                    <div class="amount-raised">
+                        <span class="amounts-value">&pound;0.00</span>
+                        <span class="amounts-label">raised</span>
+                    </div>
+                    <div class="target">
+                        <span class="amounts-value">&pound;500.00</span>
+                        <span class="amounts-label">target</span>
+                    </div>
+                </div>
+
+                <div class="donate-area">
+                    <div class="donate-btn-container">
+                        <a href="/donation/direct/charity/228985?causeid=1878742&amp;exitAfterDonorMessage=true&amp;exitUrl=%2flocal%2fproject%2fjilltest" class="btn-donate">Donate</a>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+</div>
+
+
+
+
+
+        <script src="/local/static/js/vendor/bootstrap.min.js"></script>
+
+
+            <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+
+
+
+    <script src="/local/static/js/vendor/chartwell.min.js"></script>
+<script src="/local/static/js/vendor/chartwell_pies.min.js"></script>
+<script src="/local/static/js/vendor/swfupload.js"></script>
+<script src="/local/static/js/file-upload-plugin.js"></script>
+<script src="/local/static/js/image-upload.js"></script>
+<script src="/local/static/js/project.js"></script>
+<script src="/local/static/js/project-updates.js"></script>
+<script src="/local/static/js/project-panel.js"></script>
+<script src="/local/static/js/google-map.js"></script>
+
+
+
+    </body>
+</html>
