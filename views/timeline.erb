@@ -11,6 +11,7 @@
                 <div class="span3">
                 </div>
             </div>
+            <a href="" class="why-we-started">Find out why we started this project</a>
             <div class="row-fluid">
                 <div class="span6">
                     <div class="photo-frame-outer">
@@ -20,7 +21,112 @@
                             </div>
                         </div>
                     </div>
-                    <span class="proj-complete-photo-caption">Here's the completed room. A new lick of paint and new furniture too.</span>
+                    <div class="social-area hidden-phone">
+                        <ul>
+                            <li>
+                                <div id="fb-root"></div>
+                                <fb:like ref="projectpage" data-send="false" data-layout="button_count" data-show-faces="false"></fb:like>
+                                <script type="text/javascript">
+                                    try {
+                                        window.fbAsyncInit = function () {
+                                            FB.init({ appId: '123490264376629', status: true, cookie: true, xfbml: true, oauth: true });
+
+                                            FB.Event.subscribe('edge.create', function (href) {
+                                                JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Facebook', socialAction: 'Like' });
+                                                JustGiving.Analytics.SocialTracking.Track();
+                                            });
+                                            FB.Event.subscribe('edge.remove', function (href) {
+                                                JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Facebook', socialAction: 'UnLike' });
+                                                JustGiving.Analytics.SocialTracking.Track();
+                                            });
+
+
+                                            (function (namespace) {
+                                                namespace.AppNamespace = 'jgdonationstaging';
+                                                namespace.AppId = '123490264376629';
+                                            })(JustGiving.Facebook = JustGiving.Facebook || {});
+
+                                            $(document).trigger("facebookReady");
+                                        };
+                                        (function () {
+                                            var e = document.createElement('script'); e.async = true;
+                                            e.src = document.location.protocol + '//connect.facebook.net/en_GB/all.js';
+                                            document.getElementById('fb-root').appendChild(e);
+                                        } ());
+                                    }
+                                    catch (err) {}
+                                </script></li>
+                            <li>
+                                <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://v3-staging.justgiving.com/local/project/jigsaw?utm_source=Twitter&amp;utm_medium=projectpage&amp;utm_content=Jigsaw&amp;utm_campaign=projectpage-tweet"
+                                  data-count="horizontal" data-text="Join me and help raise &#163;1000.00 for Pop up youth centre on #justgiving"
+                                  data-related="justgiving:JustGiving Twitter account" >
+                                  Tweet
+                                </a>
+                              <script type="text/javascript">
+                                  function tweetIntentToAnalytics(intent_event) {
+                                      if (intent_event) {
+                                          JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'Twitter', socialAction: 'Tweet' });
+                                          JustGiving.Analytics.SocialTracking.Track();
+                                      }
+                                  }
+                                  // load twitter js asynchronously
+                                  $(function () {
+                                      window.twttr = (function (d, s, id) {
+                                          var t, js, fjs = d.getElementsByTagName(s)[0];
+                                          if (d.getElementById(id)) return window.twttr; js = d.createElement(s); js.id = id;
+                                          js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+                                          return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+                                      }(document, "script", "twitter-wjs"));
+                                      twttr.ready(function (twttr) {
+                                          twttr.events.bind('tweet', function () { });
+                                          twttr.events.unbind('tweet');
+                                          twttr.events.bind('tweet', tweetIntentToAnalytics);
+                                      });
+                                  });
+                              </script>
+                            </li>
+                            <li>
+                                <script type="text/javascript">
+                                    $(function() {
+                                        $.getScript("//platform.linkedin.com/in.js?async=true", function () {
+                                            IN.init();
+                                        });
+                                    });
+
+                                    function linkedInSuccessAnalyticsPush() {
+                                        JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'LinkedIn', socialAction: 'Share' });
+                                        JustGiving.Analytics.SocialTracking.Track();
+                                    }
+
+                                    function linkedInFailureAnalyticsPush() {
+                                        JustGiving.Analytics.SocialTracking.ExtendSettings({ network: 'LinkedIn', socialAction: 'ShareFail' });
+                                        JustGiving.Analytics.SocialTracking.Track();
+                                    }
+                                </script>
+                                <script type="IN/Share" data-url="http://v3-staging.justgiving.com/local/project/jigsaw?utm_source=LinkedIn&amp;utm_medium=projectpage&amp;utm_content=Jigsaw&amp;utm_campaign=projectpage-linkedin" data-counter="horizontal" data-onSuccess="linkedInSuccessAnalyticsPush" data-onError="linkedInFailureAnalyticsPush"></script></li>
+                                                    <li><div class="g-plusone" data-size="medium" data-annotation="none" data-href="http://v3-staging.justgiving.com/local/project/jigsaw?utm_source=GooglePlus&utm_medium=projectpage&utm_content=Jigsaw&utm_campaign=projectpage-googleplus"></div>
+                                <!-- Google +1 button script -->
+                                <script type="text/javascript">
+                                    (function () {
+                                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                        po.src = 'https://apis.google.com/js/plusone.js';
+                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                    })();
+                                </script>
+                            </li>
+                            <li class="share-this">
+
+                                <span class="st_email_button" displayText="Email" st_url="http://v3-staging.justgiving.com/local/project/jigsaw?utm_source=Sharethis&utm_medium=projectpage&utm_content=Jigsaw&utm_campaign=projectpage-email" st_title="We're raising money for Pop up youth centre because create a support & guidance service for ages13-19" ></span>
+
+                                <script type="text/javascript">
+                                    var switchTo5x = false;
+                                    var __st_loadLate = true;
+                                </script>
+                                <script type="text/javascript" src="//ws.sharethis.com/button/buttons.js"></script>
+                                <script type="text/javascript">    stLight.options({ publisher: '10dd4b0e-da84-439d-a6ac-f1c9f07883f2', publisherGA: 'UA-8372233-1', onhover: false });</script>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="span6">
                     <div class="proj-complete-report">
@@ -40,15 +146,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row-fluid">
-                <div class="span6">
-                    <div class="social-area hidden-phone">
-                    </div>
-
-                </div>
-                <div class="span6"><a href="" class="why-we-started">Find out why we started this project</a></div>
             </div>
         </div>
 
@@ -300,7 +397,7 @@
                     <a href="#" class="find">Find a project</a>
                 </li>
             </ul>
-            <div class="tab-spacer"></div>
+            <!--<div class="tab-spacer"></div>-->
         </div>
 
     </div>

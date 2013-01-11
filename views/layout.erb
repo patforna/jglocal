@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="static/css/bootstrap.css">
 
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="views/sample.css">
+
     <script src="static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
 <!--[if lt IE 9]>
@@ -41,58 +43,50 @@
         </div>
     </nav>
 
-        <%= yield %>
-            <!-- Start JustGiving footer -->
-            <footer>
-                <div class="dynamic-footer">
-                    <a class="footer-logo" href="//justgiving.com">
-                        <img alt="JustGiving.com" src="static/img/logo-justgiving-small.png" height="17" width="90"></a>
-                    <div class="footer-list-wrapper">
-                        <ul>
-                            <li>
-                                <a href="/en/fundraising"><b>Fundraising</b></a></li>
-                            <li>
-                                <a href="/giving"><b>Giving</b></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list-wrapper">
-                        <ul>
-                            <li>
-                                <a href="/en/how-justgiving-works"><b>How JustGiving works</b></a></li>
-                            <li>
-                                <a href="/en/charities"><b>Charity membership</b></a></li>
-                            <li>
-                                <b><a href="/en/companies">Company fundraising</a></b></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list-wrapper">
-                        <ul>
-                            <li>
-                                <a href="/en/about-us"><b>About us</b></a></li>
-                            <li>
-                                <a href="/en/about-us/jobs">Jobs at JustGiving</a></li>
-                            <li>
-                                <a href="/en/about-us/media-centre">Media centre</a></li>
-                            <li>
-                                <a href="http://blog.justgiving.com/">JustGiving blog</a></li>
-                            <li>
-                                <a href="//www.justgiving.jp/">JustGiving Japan</a></li>
-                            <li>
-                                <a href="//www.justgiving.nl/">JustGiving Netherlands</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list-wrapper">
-                        <ul>
-                            <li>
-                                <a href="/en/contact-us"><b>Contact us</b></a></li>
-                            <li>
-                                <a href="//justgiving.zendesk.com/home"><b>Help</b></a></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix">&nbsp;</div>
-                </div>
-            </footer>
-            <!-- End JustGiving footer -->
+    <%= yield %>
+    <!-- Start JustGiving footer -->
+    <footer>
+        <div class="dynamic-footer">
+            <a class="footer-logo" href="//justgiving.com">
+                <img alt="JustGiving.com" src="static/img/logo-justgiving-small.png" height="17" width="90"></a>
+            <div class="footer-list-wrapper">
+                <ul>
+                    <li>
+                        <a href="/en/fundraising"><b>Fundraising</b></a></li>
+                    <li>
+                        <a href="/giving"><b>Giving</b></a></li>
+                </ul>
+            </div>
+            <div class="footer-list-wrapper">
+                <ul>
+                    <li>
+                        <a href="/en/how-justgiving-works"><b>How JustGiving works</b></a></li>
+                    <li>
+                        <a href="/en/charities"><b>Charity membership</b></a></li>
+                    <li>
+                        <b><a href="/en/companies">Company fundraising</a></b></li>
+                </ul>
+            </div>
+            <div class="footer-list-wrapper">
+                <ul>
+                    <li><a href="/en/about-us"><b>About us</b></a></li>
+                    <li><a href="/en/about-us/jobs">Jobs at JustGiving</a></li>
+                    <li><a href="/en/about-us/media-centre">Media centre</a></li>
+                    <li><a href="http://blog.justgiving.com/">JustGiving blog</a></li>
+                    <li><a href="//www.justgiving.jp/">JustGiving Japan</a></li>
+                    <li><a href="//www.justgiving.nl/">JustGiving Netherlands</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-wrapper">
+                <ul>
+                    <li><a href="/en/contact-us"><b>Contact us</b></a></li>
+                    <li><a href="//justgiving.zendesk.com/home"><b>Help</b></a></li>
+                </ul>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+        </div>
+    </footer>
+    <!-- End JustGiving footer -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
