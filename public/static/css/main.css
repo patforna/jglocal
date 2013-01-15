@@ -37,7 +37,7 @@ h3 {
 
 .project-summary-area {
     background: url(/local/static/img/bg-transparent.png);
-    padding: 0 20px 12px 20px;
+    padding: 0 20px 0 20px;
     position: relative;
 }
 
@@ -184,7 +184,6 @@ h3 {
     padding: 2px 24px 2px 0;
     margin: 0 0 0 10px;
     float: right;
-    margin-right: -2px;
 }
 
 .remind-link:hover {
@@ -292,15 +291,19 @@ h3 {
 }
 
 .update-input-skew {
-    padding: 0;
-    width: 100%;
-    outline: none;
-    cursor: auto!important;
-/*
+
+}
+
+textarea.update-input-skew {
+    border: none;
     -moz-box-shadow:    none;
     -webkit-box-shadow: none;
     box-shadow:         none;
-*/
+    padding: 5px 0 0 5px;
+    width: 95%;
+    outline: none;
+    cursor: auto!important;
+    background: none;
 }
 
 .update-submit-container {
@@ -326,7 +329,6 @@ h3 {
     top: 0;
     width: 100%;
     height: 95px;
-
     transform: skew(5deg,0.5deg);
     -ms-transform: skew(5deg,0.5deg); /* IE 9 */
     -webkit-transform: skew(5deg,0.5deg); /* Safari and Chrome */
@@ -346,9 +348,12 @@ h3 {
 
 .skew-content {
     position: absolute;
-    left: 15px;
-    top: 15px;
-    width: 95%;
+    left: 9px;
+    top: 8px;
+    width: 96%;
+    -moz-box-shadow:    inset 0 0 10px #c8c8c8;
+    -webkit-box-shadow: inset 0 0 10px #c8c8c8;
+    box-shadow:         inset 0 0 10px #c8c8c8;
 }
 
 .post-update h2 {
@@ -509,7 +514,7 @@ ul.timeline li:nth-of-type(even) .timeline-container-outer {
 }
 
 .donation-text {
-    width: 65%;
+    width: 69%;
     /*   width: 80%; */
     float: left;
     font-size: 14px;
@@ -568,8 +573,25 @@ ul.timeline li:nth-of-type(even) .timeline-container-outer {
     padding:  0 0 15px 0;
 }
 
+.project-pitch {
+    float: left;
+    clear: none;
+    width: 660px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project-pitch-inner {
+    height: 288px;
+    display: inline-block;
+    overflow: hidden;
+}
+
 .dashboard {
     margin-top: 25px;
+    float: right;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .form-disabled {
@@ -579,7 +601,7 @@ ul.timeline li:nth-of-type(even) .timeline-container-outer {
 .progress-donate {
     display: inline-block;
     overflow:  hidden;
-    width: 280px;
+    width: 274px;
 }
 
 #pie-container {
@@ -954,7 +976,7 @@ input.target-amount {
 }
 
 .photo-upload {
-    background: url(/local/static/img/plus-icon.png) no-repeat 0 4px;
+/*    background: url(/local/static/img/plus-icon.png) no-repeat 0 4px; */
     margin:  3px 0 0 11px;
     padding:  2px 16px 5px 15px;
     border: none;
@@ -994,7 +1016,7 @@ input.location-input[type="text"] {
     color: #d7348d;
     border: none;
     border-bottom: none!important;
-    width: 196px;
+    width: 398px;
     background :#fff;
     border: 1px solid #c8c8c8;
     -moz-box-shadow:    inset 0 0 10px #c8c8c8;
@@ -1853,6 +1875,10 @@ ul.footer-tab li {
     text-decoration: none;
 }
 
+.disabled .btn-donate {
+    font-size: 21px;
+}
+
 .donate-btn-container {
     display: inline-block;
     overflow: hidden;
@@ -1871,7 +1897,6 @@ ul.footer-tab li {
     background: -ms-linear-gradient(top,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #a54f97 0%,#6e2264 26%,#6d2764 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a54f97', endColorstr='#6d2764',GradientType=0 ); /* IE6-9 */
-
 }
 
 .donate-btn-inner {
@@ -1879,6 +1904,16 @@ ul.footer-tab li {
     background: url(/local/static/img/donate-btn-g-icon-bg.png) no-repeat 8px;
     text-align: center;
     height: 38px;
+}
+
+.disabled .donate-btn-container {
+    border: none;
+    background: #999999;
+}
+
+.disabled .donate-btn-inner {
+    padding: 0 34px 0 0;
+    background: url(/local/static/img/donate-btn-i-icon-bg.png) no-repeat right;
 }
 
 .btn-donate:hover {
@@ -2105,8 +2140,9 @@ footer ul {
     }
 
     nav {
-        margin: 0 0 12px 0!important;
+/*        margin: 0 0 12px 0!important; */
         width: 100%;
+        height: 54px;
         border-bottom: 1px solid #b8babc;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -2126,82 +2162,55 @@ footer ul {
         bottom: 0;
         left: 0;
         right: 0;
-        background:  #fff;
+        background: #e4e2dc;
+        border-top: 2px solid #fff;
     }
 
-    .bottom-bar .amounts-value {
-        font-size: 14px;
-        line-height: 1.0;
-        font-weight: bold;
-        padding:  0;
-        margin:  0;
-    }
-
-    .bottom-bar .amounts-label {
-
-    }
-
-    .bottom-bar .amount-raised .amounts-value {
-        color: #FF8018;
-    }
-
-    .bottom-bar .target .amounts-value {
-        color: #792569;
+    .bottom-bar .verisign-area {
+        background: url(/local/static/img/verisign-logo.png) no-repeat center center;
+        width: 28.125%;
+        min-height: 54px;
+        float: left;
+        margin: 6px 0;
     }
 
     .bottom-bar .donate-area {
-        width: 42.5%;
-        float: right;
-        padding: 0;
-        margin: 6px 0 0 0;
+        width: 71.5625%;
+        border-left: 1px dashed #878080;
+        float: left;
+        margin: 6px 0;
+        text-align: center;
     }
 
     .bottom-bar .btn-donate {
         font-size: 18px;
-        padding: 8px 14px 9px 52px;
     }
 
     .bottom-bar .donate-btn-container {
-        margin-right: 10px;
+        width: 80%;
+        text-align: center;
+        margin: 7px auto 1px auto;
     }
-
-    .bottom-bar .amounts-area {
-        width: 30%;
-        float: left;
-        clear: none;
-        padding: 0;
-        margin:  5px 0 5px 0;
-        border-left: 1px solid #888080;
-        border-left-style: dashed;
-    }
-
-    .bottom-bar .verisign-area {
-        width: 22%;
-        float: left;
-        clear: none;
-        border:  1px solid #fff;
-    }
-
-    .bottom-bar .amount-raised {
-        padding: 0 0 0 5px;
-    }
-
-    .bottom-bar .target {
-        border: none;
-        padding: 0 0 0 5px;
-    }
-
-    /*
-        .container-fluid {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    */
 
     .container {
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .project-pitch {
+        float: left;
+        clear: none;
+        width: 100%;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .project-pitch-inner {
+        height: auto;
+        display: inline-block;
+        overflow: hidden;
+    }
+
 
     .project-summary-area {
         padding: 0 10px 0 10px;
@@ -2265,15 +2274,21 @@ footer ul {
 
     /*** photo and map styles ***/
 
-    .photo-frame {
+
+    .photo-frame-outer {
         background: #fff;
         padding: 7px;
         margin: 10px 0 10px 0!important;
-        display: inline-block;
-        overflow:  hidden;
         -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
         -moz-box-shadow:    0 0 10px 2px rgba(0, 0, 0, 0.2);
         box-shadow:         0 0 10px 2px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .photo-frame {
+        display: inline-block;
+        overflow:  hidden;
     }
 
     .photo-frame-inner {
