@@ -1,4 +1,4 @@
-1
+
 
 /* ==========================================================================
    Author's custom styles
@@ -2355,7 +2355,8 @@ footer ul {
     }
 
     .donation-image-inner {
-        padding: 15.5% 15.555556% 15.5% 17.777778%;
+/*        padding: 15.5% 15.555556% 15.5% 17.777778%; */
+        padding: 7px 15.555556% 7px 17.777778%;
     }
 
     .donation-image img {
@@ -2373,7 +2374,11 @@ footer ul {
 
     .donation-text p {
         padding: 0;
-        margin: 0;
+        margin: 7px 0 1px 0;
+    }
+
+    .creator-comment .donation-text p, .creator-comment .donation-text span {
+        padding: 0 0 0 7px;
     }
 
     .donation-amount {
@@ -2382,7 +2387,7 @@ footer ul {
         font-size: 11px;
         line-height: 1.2;
         font-weight: bold;
-        padding: 0;
+        padding: 7px 0 0 0;
     }
 
     .donor-name, .creator-name {
@@ -2419,7 +2424,8 @@ footer ul {
     }
 
     .creator-comment .donation-image-inner {
-        padding: 11.66% 50% 11.66% 0;
+/*        padding: 11.66% 50% 11.66% 0; */
+        padding: 7px 50% 7px 0;
     }
 
     .creator-comment .donation-image img {
